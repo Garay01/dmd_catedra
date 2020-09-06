@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable
   DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ExecutableType="SSIS.Package.3"
@@ -37,7 +37,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABmdM/KuwffA2EAfRaJClovSzMz4re9vj2T+3jCVsQHGQAAAAAOgAAAAAIAACAAAAAJdSWhEzZRJ9yRZb5U/9lVeWFB+sb5uh4jIlEXYS85tBAAAADHR1CYqfo+I5EemV2rgoDjQAAAAIrKHVAwNPa/25g7TOYSy/rPVhtH7cxOqhssw0CdW+kZYFEs3ySd+hjpNgvQQxvEXUPqrvI6NmO1yZdVicEOSLE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAAWBSxljQWhclfEw/DIfnA98dKiehmjuT75xgQqBPrGgAAAAAOgAAAAAIAACAAAADTRQyYM93Xd/WLY93oFZSXOd5NyEbCv1gTjwjW7/5zYxAAAABVbxzvCsNjKm6n4ROnBaARQAAAABIgOCUGPwRXwqwTcqGRRgQyRvLmjOMH9r2JG1xVLqpUZu4nW3T4EKbcbkZTL2NQrls3gMthuBICD/2WYw38lj0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,7 +52,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAOiwJ4S/fFUaEjZUeAQgUh2zAcwUq5fAx+EcIAFsLzcgAAAAAOgAAAAAIAACAAAAAGSUXHOmQHQCSQkXyDJ4bmzGmmy9bPo2Y2R3wrZXIGqBAAAABefLkPRVh7znxpGsL9OBmlQAAAAD0koniX/zwCX45NZNf72qsoTFypZQFmUpnSuRfWLAUkqu5ZmpGgo+J5UZFKqYOlSlGz5Ux0Rs0X2v/8neU9YFA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB/IbPlqsfbvuU60AHk9Mh0M0xgqBZ/pCRL30X//OmOfgAAAAAOgAAAAAIAACAAAAARqBO+txo9q0Ky1giIF1Y8vw45iDjWmfoW2GlRMarklBAAAAABc2fS2ZtiS++LejHAQSi7QAAAAA4wrAPvCfzY8/7rZaqISalToQ5F1OHKhEDYXXmM0sfV2Yd9Co5TexmMCLjmpxeN7lDZ7n7aa9aneIEpb/mMsEg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -6568,50 +6568,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               startId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output]"
               endId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output2]"
               name="Merge Join Output"
-              startId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Sort 4.Inputs[Sort Input]" />
+              startId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Outputs[Merge Join Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Data Conversion.Inputs[Data Conversion Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output1]"
               name="Merge Join Output"
               startId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output]"
               endId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output2]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output]"
               name="Merge Join Output"
-              startId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Outputs[Merge Join Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Data Conversion.Inputs[Data Conversion Input]" />
+              startId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Sort 4.Inputs[Sort Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 12]"
-              name="Multicast Output 1"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 1]"
-              endId="Package\Importaciones Azucares y Confiteria\Sort 2.Inputs[Sort Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
-              name="Multicast Output 1"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 1]"
-              endId="Package\Importaciones Azucares y Confiteria\Sort.Inputs[Sort Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
               name="Multicast Output 1"
               startId="Package\Importaciones Azucares y Confiteria\Multicast.Outputs[Multicast Output 1]"
               endId="Package\Importaciones Azucares y Confiteria\Aggregate 1.Inputs[Aggregate Input 1]" />
             <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
+              name="Multicast Output 1"
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 1]"
+              endId="Package\Importaciones Azucares y Confiteria\Sort.Inputs[Sort Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
+              name="Multicast Output 1"
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 1]"
+              endId="Package\Importaciones Azucares y Confiteria\Sort 2.Inputs[Sort Input]" />
+            <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 22]"
               name="Multicast Output 2"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 2]"
-              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input]" />
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 2]"
+              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
               name="Multicast Output 2"
               startId="Package\Importaciones Azucares y Confiteria\Multicast.Outputs[Multicast Output 2]"
               endId="Package\Importaciones Azucares y Confiteria\Aggregate.Inputs[Aggregate Input 1]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
               name="Multicast Output 2"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 2]"
-              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input]" />
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 2]"
+              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 3]"
               name="Multicast Output 3"
@@ -6623,50 +6623,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               startId="Package\Importaciones Azucares y Confiteria\Multicast.Outputs[Multicast Output 4]"
               endId="Package\Importaciones Azucares y Confiteria\Sort 3.Inputs[Sort Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
-              name="Output 0"
-              startId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0]"
-              endId="Package\Importaciones Azucares y Confiteria\Multicast 2.Inputs[Multicast Input 1]" />
-            <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Output 02]"
+              name="Output 0"
+              startId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0]"
+              endId="Package\Importaciones Azucares y Confiteria\Multicast 1.Inputs[Multicast Input 1]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
               name="Output 0"
               startId="Package\Importaciones Azucares y Confiteria\Script Component 2.Outputs[Output 0]"
               endId="Package\Importaciones Azucares y Confiteria\Multicast.Inputs[Multicast Input 1]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
               name="Output 0"
-              startId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0]"
-              endId="Package\Importaciones Azucares y Confiteria\Multicast 1.Inputs[Multicast Input 1]" />
+              startId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0]"
+              endId="Package\Importaciones Azucares y Confiteria\Multicast 2.Inputs[Multicast Input 1]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
-              name="Sort Output"
-              startId="Package\Importaciones Azucares y Confiteria\Sort 4.Outputs[Sort Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Left Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
-              name="Sort Output"
-              startId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Right Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
-              name="Sort Output"
-              startId="Package\Importaciones Azucares y Confiteria\Sort 1.Outputs[Sort Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Right Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output2]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output3]"
               name="Sort Output"
               startId="Package\Importaciones Azucares y Confiteria\Sort 3.Outputs[Sort Output]"
               endId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output3]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
               name="Sort Output"
               startId="Package\Importaciones Azucares y Confiteria\Sort 2.Outputs[Sort Output]"
               endId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Right Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
               name="Sort Output"
               startId="Package\Importaciones Azucares y Confiteria\Sort.Outputs[Sort Output]"
               endId="Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Left Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
+              name="Sort Output"
+              startId="Package\Importaciones Azucares y Confiteria\Sort 4.Outputs[Sort Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Left Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
+              name="Sort Output"
+              startId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Right Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output2]"
+              name="Sort Output"
+              startId="Package\Importaciones Azucares y Confiteria\Sort 1.Outputs[Sort Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Right Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Unpivot Output]"
               name="Unpivot Output"
@@ -6744,7 +6744,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Aggregate"
           TopLeft="363,190" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
           TopLeft="530,210.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6796,7 +6796,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Multicast 1"
           TopLeft="177,286" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 02]"
           TopLeft="241.25,233">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6822,7 +6822,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Sort"
           TopLeft="372,284" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
           TopLeft="306,306">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6886,7 +6886,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Aggregate 1"
           TopLeft="701,190" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 12]"
           TopLeft="660,210.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6938,7 +6938,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Multicast 2"
           TopLeft="911,285" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
           TopLeft="973.5,231">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6964,7 +6964,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Sort 2"
           TopLeft="756,284" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 12]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
           TopLeft="911,305.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6990,7 +6990,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\Merge Join"
           TopLeft="434,373" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
           TopLeft="420.5,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7066,7 +7066,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output2]"
           TopLeft="545.5,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7100,7 +7100,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output2]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output3]"
           TopLeft="674,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7134,7 +7134,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output3]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
           TopLeft="809,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7172,7 +7172,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination"
           TopLeft="149,377" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 22]"
           TopLeft="239.75,328">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7202,7 +7202,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2"
           TopLeft="879,372" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 22]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
           TopLeft="974,327">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7272,7 +7272,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 02]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
           TopLeft="594.25,159">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7350,7 +7350,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
           TopLeft="501,494">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7384,7 +7384,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
           TopLeft="737,489">
           <EdgeLayout.Curve>
             <mssgle:Curve
