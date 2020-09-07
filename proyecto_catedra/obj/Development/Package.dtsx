@@ -6,8 +6,8 @@
   DTS:CreatorComputerName="LAPTOP-0LOSQ77V"
   DTS:CreationDate="9/1/2020 10:56:38 PM"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{D066C0C1-3AC6-412D-A166-0CAFF31D6E88}"
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{7C576E7C-5AF5-4BB8-A7E8-D73236D11327}"
   DTS:LastModifiedProductVersion="11.0.2100.60"
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
@@ -37,7 +37,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAAWBSxljQWhclfEw/DIfnA98dKiehmjuT75xgQqBPrGgAAAAAOgAAAAAIAACAAAADTRQyYM93Xd/WLY93oFZSXOd5NyEbCv1gTjwjW7/5zYxAAAABVbxzvCsNjKm6n4ROnBaARQAAAABIgOCUGPwRXwqwTcqGRRgQyRvLmjOMH9r2JG1xVLqpUZu4nW3T4EKbcbkZTL2NQrls3gMthuBICD/2WYw38lj0</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABtvyE3MYLhhrkv0pg1fdMpYlWTeNaKk7rTAj8Q0oSjsQAAAAAOgAAAAAIAACAAAAAYaeq87bZP3kMaAgzjGFG0M6zAMqQHTVeu+LxzsCNm+RAAAAD3ODMNtgCBv6vA7/s44aR3QAAAAOGGEG2QzQsXQu7k4QbGIkvh4SD//3pK30gWRyGfGXq2pbA74KfeqTr9tHIS4UTq3/2tTxrgODBDozUcuLi27js</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,7 +52,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB/IbPlqsfbvuU60AHk9Mh0M0xgqBZ/pCRL30X//OmOfgAAAAAOgAAAAAIAACAAAAARqBO+txo9q0Ky1giIF1Y8vw45iDjWmfoW2GlRMarklBAAAAABc2fS2ZtiS++LejHAQSi7QAAAAA4wrAPvCfzY8/7rZaqISalToQ5F1OHKhEDYXXmM0sfV2Yd9Co5TexmMCLjmpxeN7lDZ7n7aa9aneIEpb/mMsEg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SsPGhCMx0mIviBzQd99zAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA9CX7UBBASCPDRE03OEdepYKA/WIkkWtyr7CgKVB/7RQAAAAAOgAAAAAIAACAAAAAH7ybDVMfVTCqNFt1IIkz3MrnlC1lqvUN6ILsX1+yAshAAAADgPiw21dSPmNdl/48mWfy/QAAAAEpgFwPv8tLp3M1xsi1eU8eO8rO5Ar0DPwzl3I9wDxy/xOCNtmF5YhoTkaWdy3byjEhA9mVhWQi+SId9wTxQv0U</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,7 +87,7 @@
                   dataType="System.String"
                   description="The Destination database table name."
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
-                  expressionType="Notify">"DimCountry"</property>
+                  expressionType="Notify">DimCountry</property>
                 <property
                   name="BatchSize"
                   dataType="System.Int32"
@@ -123,18 +123,19 @@
                   errorRowDisposition="FailComponent">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[name]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[name]"
+                      externalMetadataColumnId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
+                      cachedName="name"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedCodepage="1252" />
+                    <inputColumn
                       refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[id_country]"
                       lineageId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[id_country]"
                       externalMetadataColumnId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[id]"
                       cachedName="id_country"
                       cachedDataType="guid" />
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Country]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Aggregate.Outputs[Country].Columns[Country]"
-                      externalMetadataColumnId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
-                      cachedName="Country"
-                      cachedDataType="wstr"
-                      cachedLength="255" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -146,7 +147,7 @@
                       refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[name]"
                       name="name"
                       dataType="wstr"
-                      length="255" />
+                      length="100" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -320,7 +321,7 @@
                   dataType="System.String"
                   description="The Destination database table name."
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
-                  expressionType="Notify">"DimTariff"</property>
+                  expressionType="Notify">DimTariff</property>
                 <property
                   name="BatchSize"
                   dataType="System.Int32"
@@ -362,19 +363,20 @@
                       cachedName="id_tariff"
                       cachedDataType="guid" />
                     <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].Columns[Tariff_code]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Aggregate 1.Outputs[Aggregate Output 1].Columns[Tariff_code]"
-                      externalMetadataColumnId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].ExternalColumns[code]"
-                      cachedName="Tariff_code"
-                      cachedDataType="wstr"
-                      cachedLength="255" />
-                    <inputColumn
                       refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].Columns[Tariff_Description]"
                       lineageId="Package\Importaciones Azucares y Confiteria\Aggregate 1.Outputs[Aggregate Output 1].Columns[Tariff_Description]"
                       externalMetadataColumnId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].ExternalColumns[description]"
                       cachedName="Tariff_Description"
                       cachedDataType="wstr"
                       cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].Columns[code]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[code]"
+                      externalMetadataColumnId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].ExternalColumns[code]"
+                      cachedName="code"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedCodepage="1252" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -386,7 +388,7 @@
                       refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].ExternalColumns[code]"
                       name="code"
                       dataType="wstr"
-                      length="255" />
+                      length="10" />
                     <externalMetadataColumn
                       refId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input].ExternalColumns[description]"
                       name="description"
@@ -718,97 +720,41 @@
               </outputs>
             </component>
             <component
-              refId="Package\Importaciones Azucares y Confiteria\Derived Column"
-              name="Derived Column"
+              refId="Package\Importaciones Azucares y Confiteria\Derived Column 1"
+              name="Derived Column 1"
               componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
               usesDispositions="true"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
               <inputs>
                 <input
-                  refId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input]"
+                  refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input]"
                   name="Derived Column Input"
                   description="Input to the Derived Column Transformation">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input].Columns[Country]"
-                      name="Country"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F1]"
-                      usageType="readWrite"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      truncationRowDisposition="FailComponent"
-                      cachedName="F1"
-                      cachedDataType="wstr"
-                      cachedLength="255">
-                      <properties>
-                        <property
-                          name="Expression"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F1]}</property>
-                        <property
-                          name="FriendlyExpression"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          containsID="true"
-                          expressionType="Notify">Country</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input].Columns[Tariff_code]"
-                      name="Tariff_code"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F2]"
-                      usageType="readWrite"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      truncationRowDisposition="FailComponent"
-                      cachedName="F2"
-                      cachedDataType="wstr"
-                      cachedLength="255">
-                      <properties>
-                        <property
-                          name="Expression"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F2]}</property>
-                        <property
-                          name="FriendlyExpression"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          containsID="true"
-                          expressionType="Notify">Tariff_code</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input].Columns[Tariff_Description]"
-                      name="Tariff_Description"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F3]"
-                      usageType="readWrite"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      truncationRowDisposition="FailComponent"
-                      cachedName="F3"
-                      cachedDataType="wstr"
-                      cachedLength="255">
-                      <properties>
-                        <property
-                          name="Expression"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F3]}</property>
-                        <property
-                          name="FriendlyExpression"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          containsID="true"
-                          expressionType="Notify">Tariff_Description</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input].Columns[ 1994]"
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input].Columns[1994]"
+                      name="1994"
                       lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[ 1994]"
                       cachedName=" 1994"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input].Columns[F1]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F1]"
+                      cachedName="F1"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input].Columns[F2]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F2]"
+                      cachedName="F2"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input].Columns[F3]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F3]"
+                      cachedName="F3"
                       cachedDataType="wstr"
                       cachedLength="255" />
                   </inputColumns>
@@ -817,16 +763,16 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Output]"
+                  refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output]"
                   name="Derived Column Output"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
-                  synchronousInputId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Output].Columns[1994_R]"
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[1994_R]"
                       name="1994_R"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Output].Columns[1994_R]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[1994_R]"
                       dataType="r8"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
@@ -842,30 +788,99 @@
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           containsID="true"
-                          expressionType="Notify">(DT_R8)[ 1994]</property>
+                          expressionType="Notify">(DT_R8)[1994]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[Country]"
+                      name="Country"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[Country]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="Expression"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          containsID="true">[RTRIM]([LTRIM]([TRIM](#{Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F1]})))</property>
+                        <property
+                          name="FriendlyExpression"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          containsID="true"
+                          expressionType="Notify">RTRIM(LTRIM(TRIM(F1)))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[Tariff_code]"
+                      name="Tariff_code"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[Tariff_code]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="Expression"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          containsID="true">[RTRIM]([LTRIM]([TRIM](#{Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F2]})))</property>
+                        <property
+                          name="FriendlyExpression"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          containsID="true"
+                          expressionType="Notify">RTRIM(LTRIM(TRIM(F2)))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[Tariff_Description]"
+                      name="Tariff_Description"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[Tariff_Description]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="Expression"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          containsID="true">[RTRIM]([LTRIM]([TRIM](#{Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output].Columns[F3]})))</property>
+                        <property
+                          name="FriendlyExpression"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          containsID="true"
+                          expressionType="Notify">RTRIM(LTRIM(TRIM(F3)))</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Error Output]"
+                  refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Error Output]"
                   name="Derived Column Error Output"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
-                  synchronousInputId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input]"
+                  synchronousInputId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input]"
                   isErrorOut="true">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       specialFlags="2" />
                   </outputColumns>
@@ -1534,21 +1549,6 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output].Columns[Country]"
-                      name="Country"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output].Columns[Country]"
-                      length="255"
-                      dataType="wstr"
-                      sortKeyPosition="-1">
-                      <properties>
-                        <property
-                          name="InputColumnID"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Right Input].Columns[Country]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output].Columns[Year]"
                       name="Year"
                       lineageId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output].Columns[Year]"
@@ -1586,6 +1586,21 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Right Input].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output].Columns[Country]"
+                      name="Country"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output].Columns[Country]"
+                      length="255"
+                      dataType="wstr"
+                      sortKeyPosition="-1">
+                      <properties>
+                        <property
+                          name="InputColumnID"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Left Input].Columns[Country]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1633,11 +1648,10 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                       cachedLength="255"
                       cachedSortKeyPosition="-1" />
                     <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[Tariff_Description]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 3.Outputs[Sort Output].Columns[Tariff_Description]"
-                      cachedName="Tariff_Description"
-                      cachedDataType="wstr"
-                      cachedLength="255" />
+                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[id]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 3.Outputs[Sort Output].Columns[id]"
+                      cachedName="id"
+                      cachedDataType="guid" />
                     <inputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[Value]"
                       lineageId="Package\Importaciones Azucares y Confiteria\Sort 3.Outputs[Sort Output].Columns[Value]"
@@ -1649,11 +1663,6 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                       cachedName="Year"
                       cachedDataType="wstr"
                       cachedLength="255" />
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[id]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 3.Outputs[Sort Output].Columns[id]"
-                      cachedName="id"
-                      cachedDataType="guid" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1681,8 +1690,7 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
               <outputs>
                 <output
                   refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output]"
-                  name="Merge Join Output"
-                  isSorted="true">
+                  name="Merge Join Output">
                   <outputColumns>
                     <outputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id_tariff]"
@@ -1698,32 +1706,16 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_code]"
-                      name="Tariff_code"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_code]"
-                      length="255"
-                      dataType="wstr"
-                      sortKeyPosition="-1">
+                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]"
+                      name="id"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]"
+                      dataType="guid">
                       <properties>
                         <property
                           name="InputColumnID"
                           dataType="System.Int32"
                           description="The input column associated with this output column"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[Tariff_code]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_Description]"
-                      name="Tariff_Description"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_Description]"
-                      length="255"
-                      dataType="wstr">
-                      <properties>
-                        <property
-                          name="InputColumnID"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[Tariff_Description]}</property>
+                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[id]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1751,19 +1743,6 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[Year]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]"
-                      name="id"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]"
-                      dataType="guid">
-                      <properties>
-                        <property
-                          name="InputColumnID"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input].Columns[id]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1834,16 +1813,16 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                   hasSideEffects="true">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Right Input].Columns[id_tariff]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id_tariff]"
+                      cachedName="id_tariff"
+                      cachedDataType="guid" />
+                    <inputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Right Input].Columns[id]"
                       lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id]"
                       cachedName="id"
                       cachedDataType="guid"
                       cachedSortKeyPosition="1" />
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Right Input].Columns[id_tariff]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id_tariff]"
-                      cachedName="id_tariff"
-                      cachedDataType="guid" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2038,15 +2017,15 @@ WHERE        (F1 &lt;&gt; 'PAIS') AND (F1 &lt;&gt; 'totales')</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 2]"
-                  name="Multicast Output 2"
+                  refId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 3]"
+                  name="Multicast Output 3"
                   synchronousInputId="Package\Importaciones Azucares y Confiteria\Multicast 2.Inputs[Multicast Input 1]"
                   deleteOutputOnPathDetached="true">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 3]"
-                  name="Multicast Output 3"
+                  refId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 2]"
+                  name="Multicast Output 2"
                   synchronousInputId="Package\Importaciones Azucares y Confiteria\Multicast 2.Inputs[Multicast Input 1]"
                   deleteOutputOnPathDetached="true"
                   dangling="true">
@@ -2315,6 +2294,7 @@ public class ScriptMain : UserComponent
     {
         // Generar un nuevo guid para cada pais
         Row.idcountry = System.Guid.NewGuid();
+        Row.name = Row.Country.Trim();
     }
 
 }
@@ -2359,11 +2339,33 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public Guid idcountry
+    public String name
     {
         set
         {
             this[1] = value;
+        }
+    }
+    public bool name_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Guid idcountry
+    {
+        set
+        {
+            this[2] = value;
         }
     }
     public bool idcountry_IsNull
@@ -2372,7 +2374,7 @@ public class Input0Buffer: ScriptBuffer
         {
             if (value)
             {
-                SetNull(1);
+                SetNull(2);
             }
             else
             {
@@ -2598,18 +2600,18 @@ namespace SC_ff014fb0774c4910a7b3232bf7503046.Properties {
 	<msb:PropertyGroup>
 		<msb:CodeName>SC_ff014fb0774c4910a7b3232bf7503046</msb:CodeName>
 		<msb:DisplayName>SC_ff014fb0774c4910a7b3232bf7503046</msb:DisplayName>
-		<msb:Language>msBuild</msb:Language>
 		<msb:ProjectId>{69A1BE59-667A-451C-90BC-1FF0814BBF06}</msb:ProjectId>
+		<msb:Language>msBuild</msb:Language>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="SC_ff014fb0774c4910a7b3232bf7503046.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="main.cs"/>
-		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="ComponentWrapper.cs"/>
-		<msb:File Include="Properties\Resources.Designer.cs"/>
-		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="BufferWrapper.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
 	</msb:ItemGroup>
 </c:Project>]]></arrayElement>
@@ -2746,112 +2748,112 @@ namespace SC_ff014fb0774c4910a7b3232bf7503046.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFJDVF8AAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAAbjIA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAB+0VV8AAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAAHjMA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAABwyAABPAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMgyAABTAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAdBIAAAAgAAAAFAAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAJBMAAAAgAAAAFAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABQ
-MgAAAAAAAEgAAAACAAUAcCIAAKwPAAABAAAAAAAAALghAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4CKA0AAAoCAnMQAAAGfQEAAAQCAnMRAAAGfQIAAAQqkgRy
-AQAAcBpvDgAACiwVAgUCAygPAAAKDgRzCQAABm8DAAAGKkorBwIDbwQAAAYDbw4AAAYt8SoGKh4C
-KBEAAAoqHgIoEgAACioyAygTAAAKbwwAAAYqHgIoAQAABioqAgMEBSgUAAAKKlICexUAAAoCexYA
-AAoWlG8XAAAKKiICFigYAAAKKjoCFwOMBwAAASgZAAAKKloDLAgCFygaAAAKKnIRAABwcxsAAAp6
-HgIoHAAACioeAigdAAAKKjoCKB4AAAoCA30DAAAEKjoCKB4AAAoCA30EAAAEKh4CKB4AAAoqEzAC
-AC0AAAABAAARfgUAAAQtIHKuAABw0AcAAAIoIAAACm8hAAAKcyIAAAoKBoAFAAAEfgUAAAQqGn4G
-AAAEKh4CgAYAAAQqGn4HAAAEKi5zFwAABoAHAAAEKh4CKCUAAAoqALQAAADOyu++AQAAAJEAAABs
-U3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAu
-MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3Rl
-bS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAABCU0pC
-AQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAAB4BQAAI34AAOQFAADoBgAAI1N0cmluZ3MA
-AAAAzAwAACABAAAjVVMA7A0AABAAAAAjR1VJRAAAAPwNAACwAQAAI0Jsb2IAAAAAAAAAAgAAAVcV
-ogEJAQAAAPolMwAWAAABAAAAIAAAAAgAAAAHAAAAGAAAAA8AAAAlAAAADwAAAAEAAAADAAAABwAA
-AAgAAAABAAAABAAAAAEAAAAAAAoAAQAAAAAABgDuAM0ABgD+AM0ACgAbARQBDgA3ASIBEgB2Ac0A
-BgCFAc0ACgABAhQBCgCQAn8CCgDBAqwCCgCaA4ADCgDFA7MDCgDcA7MDCgD5A7MDCgAYBLMDCgAx
-BLMDCgBKBLMDCgBlBLMDCgCABLMDCgCZBLMDCgDSBLIECgDyBLIECgA0BRQBCgA7BRQBBgBkBc0A
-CgC1BRQBCgDiBc8FCgD/BRQBCgAEBhQBCgAoBrMDDgBUBj4GDgBtBj4GCgCCBrIEAAAAAAEAAAAA
-AAEAAQABABAAMgAAAAUAAQABAAEAEABAAAAACAADAAUAAQAQAEsAAAAJAAMACQABABAAWAAAAA0A
-AwAQAAEAEABkAAAADQAEABEAAAAQAG4AeAANAAUAEgAAARAApwB4ABEABwAWAAYAWAATAAYAZAAX
-AAEAbwJZAAEAbwJZABEAoAJjABEAzQJnABEAEQOFAFAgAAAAAIYYTwEbAAEAcCAAAAAAxgCTAR8A
-AQCVIAAAAADGAaABKQAFAKggAAAAAMYBtAEpAAYAqiAAAAAAxgDLARsABwCyIAAAAADGANYBGwAH
-ALogAAAAAMYAtAEpAAcAxyAAAAAAhhhPARsACADPIAAAAACGGE8BLwAIANogAAAAAIYI4gE5AAsA
-7yAAAAAAhgjuAT0ACwD4IAAAAACGCAYCQQALAAchAAAAAIYIFAJHAAwAHiEAAAAAhgApAj0ADQAm
-IQAAAACGADECPQANAC4hAAAAAIYYTwFdAA0APSEAAAAAhhhPAV0ADgBMIQAAAACDGE8BGwAPAFQh
-AAAAAJMI3QJrAA8AjSEAAAAAkwjxAnAADwCUIQAAAACTCP0CdQAPAJwhAAAAAJYIIQOJABAAryEA
-AAAAhhhPARsAEACjIQAAAACRGJ0G8wAQAAAAAQA1AwAAAgA9AwAAAwBHAwAABABOAwAAAQBHAwAA
-AQBYAwAAAQBYAwAAAQBHAwAAAgBcAwAAAwBOAwAAAQBwAwAAAQBwAwAAAQB2AwAAAQB2AwAAAQBw
-A1EATwGTAFkATwGTAGEATwGTAGkATwGTAHEATwGTAHkATwGTAIEATwGTAIkATwGTAJEATwGTAJkA
-TwGTAKEATwGYAKkATwEbAAkATwEbALEATAWdAAkAUwWkAMEATwEbAAkAywEbAAkA1gEbADkAiwWv
-ABEATwEvABEARwO0ABEAXAO4ACkAkwW8ABEAnQXBABEApAXGABEArQWYAMkATwGTABEAKQI9ABEA
-MQI9ABkATwEbANEATwEbANkAFgbMANkAMQbTAEEATwHYAPEATwHkAAEBTwEbACEATwEbAC4AGwBo
-AS4AYwCOAS4ACwD3AC4AEwA/AS4AIwBoAS4AKwBoAS4AMwA/AS4AOwBuAS4AQwBoAS4AWwCFAWMA
-gwCqAKkAGwHqAMkAGwHqAOEAIwGqAOMA+wCqAN8ABAABAAcABQAIAAcAAAA9AkwAAABFAlAAAABU
-AlQAAABeAlAAAACQAnsAAAAJA4AAAAAtA44AAgAKAAMAAgALAAUAAQAMAAcAAQANAAkAAgATAAsA
-AgAUAA0AAQAVAA0AAgAWAA8ABIAAAAEAAACBHfmMAAAAAAAAEAUAAAsAAAAAAAAAAAAAAAEAsAAA
-AAAABAAAAAAAAAAAAAAACgALAQAAAAAEAAAAAAAAAAAAAAAKABQBAAAAAAsAAAAAAAAAAAAAAAEA
-VQEAAAAAAAAAAAEAAACkBgAAAAAAAAA8TW9kdWxlPgBTQ19mZjAxNGZiMDc3NGM0OTEwYTdiMzIz
-MmJmNzUwMzA0Ni5kbGwAVXNlckNvbXBvbmVudABTY3JpcHRNYWluAElucHV0MEJ1ZmZlcgBDb25u
-ZWN0aW9ucwBWYXJpYWJsZXMAUmVzb3VyY2VzAFNDX2ZmMDE0ZmIwNzc0YzQ5MTBhN2IzMjMyYmY3
-NTAzMDQ2LlByb3BlcnRpZXMAU2V0dGluZ3MATWljcm9zb2Z0LlNxbFNlcnZlci5UeFNjcmlwdABN
-aWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZQBTY3JpcHRDb21wb25lbnQAU2NyaXB0QnVm
-ZmVyAG1zY29ybGliAFN5c3RlbQBPYmplY3QAU3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGljYXRp
-b25TZXR0aW5nc0Jhc2UALmN0b3IATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QAUGlw
-ZWxpbmVCdWZmZXIAT3V0cHV0TmFtZU1hcABQcm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nlc3NJbnB1
-dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAZ2V0X0NvdW50
-cnkAZ2V0X0NvdW50cnlfSXNOdWxsAEd1aWQAc2V0X2lkY291bnRyeQBzZXRfaWRjb3VudHJ5X0lz
-TnVsbABOZXh0Um93AEVuZE9mUm93c2V0AENvdW50cnkAQ291bnRyeV9Jc051bGwAaWRjb3VudHJ5
-AGlkY291bnRyeV9Jc051bGwAUGFyZW50Q29tcG9uZW50AFN5c3RlbS5SZXNvdXJjZXMAUmVzb3Vy
-Y2VNYW5hZ2VyAHJlc291cmNlTWFuAFN5c3RlbS5HbG9iYWxpemF0aW9uAEN1bHR1cmVJbmZvAHJl
-c291cmNlQ3VsdHVyZQBnZXRfUmVzb3VyY2VNYW5hZ2VyAGdldF9DdWx0dXJlAHNldF9DdWx0dXJl
-AEN1bHR1cmUAZGVmYXVsdEluc3RhbmNlAGdldF9EZWZhdWx0AERlZmF1bHQASW5wdXRJRABJbnB1
-dE5hbWUAQnVmZmVyAE91dHB1dE1hcABSb3cAQnVmZmVyQ29sdW1uSW5kZXhlcwB2YWx1ZQBDb21w
-b25lbnQAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUA
-U3lzdGVtLlJlZmxlY3Rpb24AQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0
-aW9uQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseUNvbXBh
-bnlBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0
-cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAEFzc2VtYmx5Q3VsdHVyZUF0dHJpYnV0
-ZQBBc3NlbWJseVZlcnNpb25BdHRyaWJ1dGUAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNl
-cwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0
-cmlidXRlAFNDX2ZmMDE0ZmIwNzc0YzQ5MTBhN2IzMjMyYmY3NTAzMDQ2AFN0cmluZwBTdHJpbmdD
-b21wYXJpc29uAEVxdWFscwBHZXRDb2x1bW5JbmRleGVzAFNTSVNTY3JpcHRDb21wb25lbnRFbnRy
-eVBvaW50QXR0cmlidXRlAE5ld0d1aWQAR2V0U3RyaW5nAElzTnVsbABzZXRfSXRlbQBTZXROdWxs
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAA
+MwAAAAAAAEgAAAACAAUAqCIAACAQAAABAAAAAAAAAPAhAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4CKA0AAAoCAnMSAAAGfQEAAAQCAnMTAAAGfQIAAAQqkgRy
+AQAAcBpvDgAACiwVAgUCAygPAAAKDgRzCQAABm8DAAAGKkorBwIDbwQAAAYDbxAAAAYt8SoGKh4C
+KBEAAAoqHgIoEgAACip2AygTAAAKbw4AAAYDA28KAAAGbxQAAApvDAAABioeAigBAAAGKioCAwQF
+KBUAAAoqUgJ7FgAACgJ7FwAAChaUbxgAAAoqIgIWKBkAAAoqJgIXAygaAAAKKloDLAgCFygbAAAK
+KnIRAABwcxwAAAp6OgIYA4wHAAABKBoAAAoqWgMsCAIYKBsAAAoqchEAAHBzHAAACnoeAigdAAAK
+Kh4CKB4AAAoqOgIoHwAACgIDfQMAAAQqOgIoHwAACgIDfQQAAAQqHgIoHwAACioAABMwAgAtAAAA
+AQAAEX4FAAAELSByrgAAcNAHAAACKCEAAApvIgAACnMjAAAKCgaABQAABH4FAAAEKhp+BgAABCoe
+AoAGAAAEKhp+BwAABCoucxkAAAaABwAABCoeAigmAAAKKgAAAAAAtAAAAM7K774BAAAAkQAAAGxT
+eXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4w
+LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVt
+LlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAEJTSkIB
+AAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAALwFAAAjfgAAKAYAABgHAAAjU3RyaW5ncwAA
+AABADQAAIAEAACNVUwBgDgAAEAAAACNHVUlEAAAAcA4AALABAAAjQmxvYgAAAAAAAAACAAABVxWi
+AQkBAAAA+iUzABYAAAEAAAAgAAAACAAAAAcAAAAaAAAAEQAAACYAAAAPAAAAAQAAAAMAAAAJAAAA
+CgAAAAEAAAAEAAAAAQAAAAAACgABAAAAAAAGAO4AzQAGAP4AzQAKABsBFAEOADcBIgESAHYBzQAG
+AIUBzQAKABoCFAEKALoCqQIKAOsC1gIKAMQDqgMKAO8D3QMKAAYE3QMKACME3QMKAEIE3QMKAFsE
+3QMKAHQE3QMKAI8E3QMKAKoE3QMKAMME3QMKAPwE3AQKABwF3AQKAF4FFAEKAGUFFAEGAI4FzQAK
+AOQFFAEKABEG/gUKAC4GFAEKADMGFAEKAFcG3QMOAIMGbQYOAJwGbQYKALEG3AQAAAAAAQAAAAAA
+AQABAAEAEAAyAAAABQABAAEAAQAQAEAAAAAIAAMABQABABAASwAAAAkAAwAJAAEAEABYAAAADQAD
+ABIAAQAQAGQAAAANAAQAEwAAABAAbgB4AA0ABQAUAAABEACnAHgAEQAHABgABgBYABMABgBkABcA
+AQCZAl4AAQCZAl4AEQDKAmgAEQD3AmwAEQA7A4oAUCAAAAAAhhhPARsAAQBwIAAAAADGAJMBHwAB
+AJUgAAAAAMYBoAEpAAUAqCAAAAAAxgG0ASkABgCqIAAAAADGAMsBGwAHALIgAAAAAMYA1gEbAAcA
+uiAAAAAAxgC0ASkABwDYIAAAAACGGE8BGwAIAOAgAAAAAIYYTwEvAAgA6yAAAAAAhgjiATkACwAA
+IQAAAACGCO4BPQALAAkhAAAAAIYIAQJBAAsAEyEAAAAAhggKAkYADAAqIQAAAACGCB8CSwANADkh
+AAAAAIYILQJGAA4AUCEAAAAAhgBCAj0ADwBYIQAAAACGAEoCPQAPAGAhAAAAAIYYTwFiAA8AbyEA
+AAAAhhhPAWIAEAB+IQAAAACDGE8BGwARAIghAAAAAJMIBwNwABEAwSEAAAAAkwgbA3UAEQDIIQAA
+AACTCCcDegARANAhAAAAAJYISwOOABIA4yEAAAAAhhhPARsAEgDXIQAAAACRGMwG8wASAAAAAQBf
+AwAAAgBnAwAAAwBxAwAABAB4AwAAAQBxAwAAAQCCAwAAAQCCAwAAAQBxAwAAAgCGAwAAAwB4AwAA
+AQCaAwAAAQCaAwAAAQCaAwAAAQCaAwAAAQCgAwAAAQCgAwAAAQCaA1EATwFBAFkATwFBAGEATwFB
+AGkATwFBAHEATwFBAHkATwFBAIEATwFBAIkATwFBAJEATwFBAJkATwFBAKEATwGYAKkATwEbAAkA
+TwEbALEAdgWdAAkAfQWkAMEATwEbAAkAywEbAAkA1gEbADkAtQWvALEAvQU5ABEATwEvABEAcQO0
+ABEAhgO4ACkAwgW8ABEAzAXBABEA0wXGABEA3AWYAMkATwFBABEAQgI9ABEASgI9ABkATwEbANEA
+TwEbANkARQbMANkAYAbTAEEATwHYAPEATwHkAAEBTwEbACEATwEbAC4AGwBoAS4AYwCOAS4ACwD3
+AC4AEwA/AS4AIwBoAS4AKwBoAS4AMwA/AS4AOwBuAS4AQwBoAS4AWwCFAWMAgwCqAOEAKwGqAOMA
+AwGqAOkAIwHqAAkBIwHqAN8ABAABAAcABwAIAAkAAABWAlEAAABeAlUAAABtAlEAAAByAlUAAAB+
+AlkAAACIAlUAAAC6AoAAAAAzA4UAAABXA5MAAgAKAAMAAgALAAUAAQAMAAcAAQANAAkAAQAOAAsA
+AQAPAA0AAgAVAA8AAgAWABEAAQAXABEAAgAYABMABIAAAAEAAACCHZ+cAAAAAAAAOgUAAAsAAAAA
+AAAAAAAAAAEAsAAAAAAABAAAAAAAAAAAAAAACgALAQAAAAAEAAAAAAAAAAAAAAAKABQBAAAAAAsA
+AAAAAAAAAAAAAAEAVQEAAAAAAAAAAAEAAADTBgAAAAAAPE1vZHVsZT4AU0NfZmYwMTRmYjA3NzRj
+NDkxMGE3YjMyMzJiZjc1MDMwNDYuZGxsAFVzZXJDb21wb25lbnQAU2NyaXB0TWFpbgBJbnB1dDBC
+dWZmZXIAQ29ubmVjdGlvbnMAVmFyaWFibGVzAFJlc291cmNlcwBTQ19mZjAxNGZiMDc3NGM0OTEw
+YTdiMzIzMmJmNzUwMzA0Ni5Qcm9wZXJ0aWVzAFNldHRpbmdzAE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
+VHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAU2NyaXB0Q29tcG9uZW50
+AFNjcmlwdEJ1ZmZlcgBtc2NvcmxpYgBTeXN0ZW0AT2JqZWN0AFN5c3RlbS5Db25maWd1cmF0aW9u
+AEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAC5jdG9yAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxp
+bmVIb3N0AFBpcGVsaW5lQnVmZmVyAE91dHB1dE5hbWVNYXAAUHJvY2Vzc0lucHV0AElucHV0MF9Q
+cm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nlc3NJbnB1dFJvdwBQcmVFeGVjdXRlAFBvc3RFeGVjdXRl
+AGdldF9Db3VudHJ5AGdldF9Db3VudHJ5X0lzTnVsbABzZXRfbmFtZQBzZXRfbmFtZV9Jc051bGwA
+R3VpZABzZXRfaWRjb3VudHJ5AHNldF9pZGNvdW50cnlfSXNOdWxsAE5leHRSb3cARW5kT2ZSb3dz
+ZXQAQ291bnRyeQBDb3VudHJ5X0lzTnVsbABuYW1lAG5hbWVfSXNOdWxsAGlkY291bnRyeQBpZGNv
+dW50cnlfSXNOdWxsAFBhcmVudENvbXBvbmVudABTeXN0ZW0uUmVzb3VyY2VzAFJlc291cmNlTWFu
+YWdlcgByZXNvdXJjZU1hbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwByZXNvdXJj
+ZUN1bHR1cmUAZ2V0X1Jlc291cmNlTWFuYWdlcgBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQBDdWx0
+dXJlAGRlZmF1bHRJbnN0YW5jZQBnZXRfRGVmYXVsdABEZWZhdWx0AElucHV0SUQASW5wdXROYW1l
+AEJ1ZmZlcgBPdXRwdXRNYXAAUm93AEJ1ZmZlckNvbHVtbkluZGV4ZXMAdmFsdWUAQ29tcG9uZW50
+AFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAFN5c3Rl
+bS5SZWZsZWN0aW9uAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0
+dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0
+cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0
+ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBBc3NlbWJseUN1bHR1cmVBdHRyaWJ1dGUAQXNz
+ZW1ibHlWZXJzaW9uQXR0cmlidXRlAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAQ29t
+cGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0
+ZQBTQ19mZjAxNGZiMDc3NGM0OTEwYTdiMzIzMmJmNzUwMzA0NgBTdHJpbmcAU3RyaW5nQ29tcGFy
+aXNvbgBFcXVhbHMAR2V0Q29sdW1uSW5kZXhlcwBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2lu
+dEF0dHJpYnV0ZQBOZXdHdWlkAFRyaW0AR2V0U3RyaW5nAElzTnVsbABzZXRfSXRlbQBTZXROdWxs
 AEludmFsaWRPcGVyYXRpb25FeGNlcHRpb24AU3lzdGVtLkRpYWdub3N0aWNzAERlYnVnZ2VyTm9u
 VXNlckNvZGVBdHRyaWJ1dGUAVHlwZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRs
 ZQBBc3NlbWJseQBnZXRfQXNzZW1ibHkAU3lzdGVtLkNvbXBvbmVudE1vZGVsAEVkaXRvckJyb3dz
 YWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJp
 YnV0ZQAuY2N0b3IAU0NfZmYwMTRmYjA3NzRjNDkxMGE3YjMyMzJiZjc1MDMwNDYuUHJvcGVydGll
-cy5SZXNvdXJjZXMucmVzb3VyY2VzAAAAD0kAbgBwAHUAdAAgADAAAICbSQBzAE4AdQBsAGwAIABw
-AHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwA
-cwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBs
-AHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAABxUwBDAF8AZgBmADAAMQA0AGYAYgAwADcANwA0AGMA
-NAA5ADEAMABhADcAYgAzADIAMwAyAGIAZgA3ADUAMAAzADAANAA2AC4AUAByAG8AcABlAHIAdABp
-AGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAABhwY1Zi6XLRLoxogcGzUtXAAiJhF3NgIDMkQi3elxW
-GTTgiQMGEhQDBhIYAyAAAQkgBAEIDhIVEhkFIAEBEhAJIAMBEhUdCBIZAyAADgMgAAIFIAEBER0E
-IAEBAgMoAA4DKAACBCgAER0DBhIFBSABARIFAwYSIQMGEiUEAAASIQQAABIlBQABARIlBAgAEiEE
-CAASJQMGEiAEAAASIAQIABIgBCABAQ4EIAEBCAYgAgIOEV0FIAEdCAgEAQAAAAQAABEdAwYSFQMG
-HQgEIAEOCAQgAQIIBSACAQgcBgABEm0RcQQgABJ1BiACAQ4SdQQHARIhBSABARF9CAEAAgAAAAAA
-AwAAAUcBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuMAEAVA4URnJhbWV3b3JrRGlzcGxheU5h
-bWUQLk5FVCBGcmFtZXdvcmsgNCgBACNTQ19mZjAxNGZiMDc3NGM0OTEwYTdiMzIzMmJmNzUwMzA0
-NgAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDIwAAAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25F
-eGNlcHRpb25UaHJvd3MBAAAARDIAAAAAAAAAAAAAXjIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AFAyAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+cy5SZXNvdXJjZXMucmVzb3VyY2VzAAAAAA9JAG4AcAB1AHQAIAAwAACAm0kAcwBOAHUAbABsACAA
+cAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBs
+AHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8A
+bAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAcVMAQwBfAGYAZgAwADEANABmAGIAMAA3ADcANABj
+ADQAOQAxADAAYQA3AGIAMwAyADMAMgBiAGYANwA1ADAAMwAwADQANgAuAFAAcgBvAHAAZQByAHQA
+aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAXP/SZElRskuQ1SpNhoU2zQAIiYRdzYCAzJEIt3pc
+Vhk04IkDBhIUAwYSGAMgAAEJIAQBCA4SFRIZBSABARIQCSADARIVHQgSGQMgAA4DIAACBCABAQ4E
+IAEBAgUgAQERHQMoAA4DKAACBCgAER0DBhIFBSABARIFAwYSIQMGEiUEAAASIQQAABIlBQABARIl
+BAgAEiEECAASJQMGEiAEAAASIAQIABIgBCABAQgGIAICDhFdBSABHQgIBAEAAAAEAAARHQMGEhUD
+Bh0IBCABDggEIAECCAUgAgEIHAYAARJtEXEEIAASdQYgAgEOEnUEBwESIQUgAQERfQgBAAIAAAAA
+AAMAAAFHAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjABAFQOFEZyYW1ld29ya0Rpc3BsYXlO
+YW1lEC5ORVQgRnJhbWV3b3JrIDQoAQAjU0NfZmYwMTRmYjA3NzRjNDkxMGE3YjMyMzJiZjc1MDMw
+NDYAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMAAACAEACAAAAAAAHgEAAQBUAhZXcmFwTm9u
+RXhjZXB0aW9uVGhyb3dzAQAAAPAyAAAAAAAAAAAAAA4zAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAMwAAAAAAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
 SAAAAFhAAACwAwAAAAAAAAAAAACwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEA+YyBHQAAAQD5jIEdPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAAAvQTv/gAAAQAAAAEAn5yCHQAAAQCfnIIdPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
 AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
 AAAAAAAAALAEEAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAA7AIAAAEAMAAwADAA
 MAAwADQAYgAwAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAQwBf
 AGYAZgAwADEANABmAGIAMAA3ADcANABjADQAOQAxADAAYQA3AGIAMwAyADMAMgBiAGYANwA1ADAA
-MwAwADQANgAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA3ADUANQAz
-AC4AMwA2ADAAOAA5AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfAGYA
+MwAwADQANgAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA3ADUANQA0
+AC4ANAAwADAAOQA1AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfAGYA
 ZgAwADEANABmAGIAMAA3ADcANABjADQAOQAxADAAYQA3AGIAMwAyADMAMgBiAGYANwA1ADAAMwAw
 ADQANgAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAA
 eQByAGkAZwBoAHQAIABAACAAIAAyADAAMgAwAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBs
@@ -2859,8 +2861,8 @@ AGUAbgBhAG0AZQAAAFMAQwBfAGYAZgAwADEANABmAGIAMAA3ADcANABjADQAOQAxADAAYQA3AGIA
 MwAyADMAMgBiAGYANwA1ADAAMwAwADQANgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABO
 AGEAbQBlAAAAAABTAEMAXwBmAGYAMAAxADQAZgBiADAANwA3ADQAYwA0ADkAMQAwAGEANwBiADMA
 MgAzADIAYgBmADcANQAwADMAMAA0ADYAAABEAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBv
-AG4AAAAxAC4AMAAuADcANQA1ADMALgAzADYAMAA4ADkAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
-eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADcANQA1ADMALgAzADYAMAA4ADkAAAAAAAAAAAAA
+AG4AAAAxAC4AMAAuADcANQA1ADQALgA0ADAAMAA5ADUAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
+eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADcANQA1ADQALgA0ADAAMAA5ADUAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2869,7 +2871,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAcDIAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAIDMAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2914,7 +2916,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   name="MetadataChecksum"
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
-                  typeConverter="NOTBROWSABLE">900351c853e1a86645c11061c2de9c7d</property>
+                  typeConverter="NOTBROWSABLE">4cadcc39850310ab9f031e80a21a6eb4</property>
                 <property
                   name="UserComponentTypeName"
                   dataType="System.String">Microsoft.SqlServer.Dts.Pipeline.ScriptComponentHost, Microsoft.SqlServer.TxScript, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
@@ -2941,6 +2943,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   name="Output 0"
                   synchronousInputId="Package\Importaciones Azucares y Confiteria\Script Component.Inputs[Input 0]">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[name]"
+                      name="name"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[name]"
+                      length="100"
+                      dataType="str"
+                      codePage="1252" />
                     <outputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[id_country]"
                       name="id_country"
@@ -3212,6 +3221,7 @@ public class ScriptMain : UserComponent
     {
         // Creando uid para id de importe
         Row.idtariff = System.Guid.NewGuid();
+        Row.code = Row.Tariffcode.Trim();
     }
 
 }
@@ -3241,11 +3251,63 @@ public class Input0Buffer: ScriptBuffer
     {
     }
 
+    public String Tariffcode
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool Tariffcode_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String TariffDescription
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool TariffDescription_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public String code
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool code_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
     public Guid idtariff
     {
         set
         {
-            this[0] = value;
+            this[3] = value;
         }
     }
     public bool idtariff_IsNull
@@ -3254,7 +3316,7 @@ public class Input0Buffer: ScriptBuffer
         {
             if (value)
             {
-                SetNull(0);
+                SetNull(3);
             }
             else
             {
@@ -3480,18 +3542,18 @@ namespace SC_a8bf62f8a52344f381a15b002157ee02.Properties {
 	<msb:PropertyGroup>
 		<msb:CodeName>SC_a8bf62f8a52344f381a15b002157ee02</msb:CodeName>
 		<msb:DisplayName>SC_a8bf62f8a52344f381a15b002157ee02</msb:DisplayName>
-		<msb:Language>msBuild</msb:Language>
 		<msb:ProjectId>{3BB73649-5EC2-44D5-B027-35259FE19E4F}</msb:ProjectId>
+		<msb:Language>msBuild</msb:Language>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="SC_a8bf62f8a52344f381a15b002157ee02.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="main.cs"/>
-		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="ComponentWrapper.cs"/>
-		<msb:File Include="Properties\Resources.Designer.cs"/>
-		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="BufferWrapper.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
 	</msb:ItemGroup>
 </c:Project>]]></arrayElement>
@@ -3628,130 +3690,139 @@ namespace SC_a8bf62f8a52344f381a15b002157ee02.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAC1GVF8AAAAAAAAAAOAAAiELAQsAABIAAAAIAAAAAAAAnjEA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJGyVV8AAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAAzjMA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAFAxAABLAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAHgzAABTAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAApBEAAAAgAAAAEgAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACA
-MQAAAAAAAEgAAAACAAUAWCIAAPgOAAABAAAAAAAAAKAhAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4CKA0AAAoCAnMOAAAGfQEAAAQCAnMPAAAGfQIAAAQqkgRy
-AQAAcBpvDgAACiwVAgUCAygPAAAKDgRzCQAABm8DAAAGKkorBwIDbwQAAAYDbwwAAAYt8SoGKh4C
-KBEAAAoqHgIoEgAACioyAygTAAAKbwoAAAYqHgIoAQAABioqAgMEBSgUAAAKKjoCFgOMBwAAASgV
-AAAKKloDLAgCFigWAAAKKnIRAABwcxcAAAp6HgIoGAAACioeAigZAAAKKjoCKBoAAAoCA30DAAAE
-KjoCKBoAAAoCA30EAAAEKh4CKBoAAAoqAAATMAIALQAAAAEAABF+BQAABC0gcq4AAHDQBwAAAigc
-AAAKbx0AAApzHgAACgoGgAUAAAR+BQAABCoafgYAAAQqHgKABgAABCoafgcAAAQqLnMVAAAGgAcA
-AAQqHgIoIQAACioAAAAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJj
-ZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJs
-aWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291
-cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAABCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAA
-AAAFAGwAAAAsBQAAI34AAJgFAACcBgAAI1N0cmluZ3MAAAAANAwAACABAAAjVVMAVA0AABAAAAAj
-R1VJRAAAAGQNAACUAQAAI0Jsb2IAAAAAAAAAAgAAAVcVogEJAQAAAPolMwAWAAABAAAAIAAAAAgA
-AAAHAAAAFgAAAA8AAAAhAAAADwAAAAEAAAADAAAABQAAAAYAAAABAAAABAAAAAEAAAAAAAoAAQAA
-AAAABgDuAM0ABgD+AM0ACgAbARQBDgA3ASIBEgB2Ac0ABgCFAc0ACgDiARQBCgBWAkUCCgCHAnIC
-CgBgA0YDCgCLA3kDCgCiA3kDCgC/A3kDCgDeA3kDCgD3A3kDCgAQBHkDCgArBHkDCgBGBHkDCgBf
-BHkDCgCYBHgECgC4BHgECgD6BBQBCgABBRQBBgAqBc0ACgBqBRQBCgCXBYQFCgC0BRQBCgC5BRQB
-CgDdBXkDDgAJBvMFDgAiBvMFCgA3BngEAAAAAAEAAAAAAAEAAQABABAAMgAAAAUAAQABAAEAEABA
-AAAACAADAAUAAQAQAEsAAAAJAAMACQABABAAWAAAAA0AAwAOAAEAEABkAAAADQAEAA8AAAAQAG4A
-eAANAAUAEAAAARAApwB4ABEABwAUAAYAWAATAAYAZAAXAAEANQJRAAEANQJRABEAZgJbABEAkwJf
-ABEA1wJ9AFAgAAAAAIYYTwEbAAEAcCAAAAAAxgCTAR8AAQCVIAAAAADGAaABKQAFAKggAAAAAMYB
-tAEpAAYAqiAAAAAAxgDLARsABwCyIAAAAADGANYBGwAHALogAAAAAMYAtAEpAAcAxyAAAAAAhhhP
-ARsACADPIAAAAACGGE8BLwAIANogAAAAAIYI5wE5AAsA6SAAAAAAhgj0AT8ADAAAIQAAAACGAAgC
-RAANAAghAAAAAIYAEAJEAA0AECEAAAAAhhhPAVUADQAfIQAAAACGGE8BVQAOAC4hAAAAAIMYTwEb
-AA8AOCEAAAAAkwijAmMADwBxIQAAAACTCLcCaAAPAHghAAAAAJMIwwJtAA8AgCEAAAAAlgjnAoEA
-EACTIQAAAACGGE8BGwAQAIchAAAAAJEYUgbZABAAAAABAPsCAAACAAMDAAADAA0DAAAEABQDAAAB
-AA0DAAABAB4DAAABAB4DAAABAA0DAAACACIDAAADABQDAAABADYDAAABADYDAAABADwDAAABADwD
-AAABADYDUQBPAYsAWQBPAYsAYQBPAYsAaQBPAYsAcQBPAYsAeQBPAYsAgQBPAYsAiQBPAYsAkQBP
-AYsAmQBPAYsAoQBPAZAAqQBPARsACQBPARsAsQASBZUACQAZBZwAwQBPARsACQDLARsACQDWARsA
-OQBRBacAEQBPAS8AEQBZBawAEQBiBZAAyQBPAYsAEQAIAkQAEQAQAkQAGQBPARsA0QBPARsA2QDL
-BbIA2QDmBbkAQQBPAb4A8QBPAcoAAQFPARsAIQBPARsALgAbAE4BLgBjAHQBLgALAN0ALgATACUB
-LgAjAE4BLgArAE4BLgAzACUBLgA7AFQBLgBDAE4BLgBbAGsBYwCDAKIAaQD7ANAAiQD7ANAA4QAD
-AaIA4wDbAKIAxQAEAAEABwADAAgABQAAABwCSAAAACUCTQAAAFYCcwAAAM8CeAAAAPMChgABAAoA
-AwABAAsABQACABEABwACABIACQABABMACQACABQACwAEgAAAAQAAAIEdZo4AAAAAAADWBAAACwAA
-AAAAAAAAAAAAAQCwAAAAAAAEAAAAAAAAAAAAAAAKAAsBAAAAAAQAAAAAAAAAAAAAAAoAFAEAAAAA
-CwAAAAAAAAAAAAAAAQBVAQAAAAAAAAAAAQAAAFkGAAAAAAAAADxNb2R1bGU+AFNDX2E4YmY2MmY4
-YTUyMzQ0ZjM4MWExNWIwMDIxNTdlZTAyLmRsbABVc2VyQ29tcG9uZW50AFNjcmlwdE1haW4ASW5w
-dXQwQnVmZmVyAENvbm5lY3Rpb25zAFZhcmlhYmxlcwBSZXNvdXJjZXMAU0NfYThiZjYyZjhhNTIz
-NDRmMzgxYTE1YjAwMjE1N2VlMDIuUHJvcGVydGllcwBTZXR0aW5ncwBNaWNyb3NvZnQuU3FsU2Vy
-dmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFNjcmlwdENvbXBv
-bmVudABTY3JpcHRCdWZmZXIAbXNjb3JsaWIAU3lzdGVtAE9iamVjdABTeXN0ZW0uQ29uZmlndXJh
-dGlvbgBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQAuY3RvcgBNaWNyb3NvZnQuU3FsU2VydmVyLlBp
-cGVsaW5lSG9zdABQaXBlbGluZUJ1ZmZlcgBPdXRwdXROYW1lTWFwAFByb2Nlc3NJbnB1dABJbnB1
-dDBfUHJvY2Vzc0lucHV0AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cAUHJlRXhlY3V0ZQBQb3N0RXhl
-Y3V0ZQBHdWlkAHNldF9pZHRhcmlmZgBzZXRfaWR0YXJpZmZfSXNOdWxsAE5leHRSb3cARW5kT2ZS
-b3dzZXQAaWR0YXJpZmYAaWR0YXJpZmZfSXNOdWxsAFBhcmVudENvbXBvbmVudABTeXN0ZW0uUmVz
-b3VyY2VzAFJlc291cmNlTWFuYWdlcgByZXNvdXJjZU1hbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBD
-dWx0dXJlSW5mbwByZXNvdXJjZUN1bHR1cmUAZ2V0X1Jlc291cmNlTWFuYWdlcgBnZXRfQ3VsdHVy
-ZQBzZXRfQ3VsdHVyZQBDdWx0dXJlAGRlZmF1bHRJbnN0YW5jZQBnZXRfRGVmYXVsdABEZWZhdWx0
-AElucHV0SUQASW5wdXROYW1lAEJ1ZmZlcgBPdXRwdXRNYXAAUm93AEJ1ZmZlckNvbHVtbkluZGV4
-ZXMAdmFsdWUAQ29tcG9uZW50AFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVGFyZ2V0RnJhbWV3
-b3JrQXR0cmlidXRlAFN5c3RlbS5SZWZsZWN0aW9uAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNz
-ZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUA
-QXNzZW1ibHlDb21wYW55QXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJs
-eUNvcHlyaWdodEF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBBc3NlbWJseUN1
-bHR1cmVBdHRyaWJ1dGUAQXNzZW1ibHlWZXJzaW9uQXR0cmlidXRlAFN5c3RlbS5SdW50aW1lLkNv
-bXBpbGVyU2VydmljZXMAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBSdW50aW1lQ29t
-cGF0aWJpbGl0eUF0dHJpYnV0ZQBTQ19hOGJmNjJmOGE1MjM0NGYzODFhMTViMDAyMTU3ZWUwMgBT
-dHJpbmcAU3RyaW5nQ29tcGFyaXNvbgBFcXVhbHMAR2V0Q29sdW1uSW5kZXhlcwBTU0lTU2NyaXB0
-Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBOZXdHdWlkAHNldF9JdGVtAFNldE51bGwASW52
-YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTeXN0ZW0uRGlhZ25vc3RpY3MARGVidWdnZXJOb25Vc2Vy
-Q29kZUF0dHJpYnV0ZQBUeXBlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAEFz
-c2VtYmx5AGdldF9Bc3NlbWJseQBTeXN0ZW0uQ29tcG9uZW50TW9kZWwARWRpdG9yQnJvd3NhYmxl
-QXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRl
-AC5jY3RvcgBTQ19hOGJmNjJmOGE1MjM0NGYzODFhMTViMDAyMTU3ZWUwMi5Qcm9wZXJ0aWVzLlJl
-c291cmNlcy5yZXNvdXJjZXMAAA9JAG4AcAB1AHQAIAAwAACAm0kAcwBOAHUAbABsACAAcAByAG8A
-cABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAu
-ACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0A
-bgAgAGkAbgBzAHQAZQBhAGQALgAAcVMAQwBfAGEAOABiAGYANgAyAGYAOABhADUAMgAzADQANABm
-ADMAOAAxAGEAMQA1AGIAMAAwADIAMQA1ADcAZQBlADAAMgAuAFAAcgBvAHAAZQByAHQAaQBlAHMA
-LgBSAGUAcwBvAHUAcgBjAGUAcwAAgO3MPpfT3U2bCJ3AYsGnDwAIiYRdzYCAzJEIt3pcVhk04IkD
-BhIUAwYSGAMgAAEJIAQBCA4SFRIZBSABARIQCSADARIVHQgSGQUgAQERHQQgAQECAyAAAgQoABEd
-AygAAgMGEgUFIAEBEgUDBhIhAwYSJQQAABIhBAAAEiUFAAEBEiUECAASIQQIABIlAwYSIAQAABIg
-BAgAEiAEIAEBDgQgAQEIBiACAg4RXQUgAR0ICAQBAAAABAAAER0FIAIBCBwGAAESbRFxBCAAEnUG
-IAIBDhJ1BAcBEiEFIAEBEX0IAQACAAAAAAADAAABRwEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12
-NC4wAQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRAuTkVUIEZyYW1ld29yayA0KAEAI1NDX2E4YmY2
-MmY4YTUyMzQ0ZjM4MWExNWIwMDIxNTdlZTAyAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjAA
-AAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEAeDEAAAAAAAAAAAAAjjEA
-AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAxAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRs
-bAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
-AEgAAABYQAAAsAMAAAAAAAAAAAAAsAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
-AAAAAL0E7/4AAAEAAAABAGaOgR0AAAEAZo6BHT8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
-AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
-bgAAAAAAAACwBBADAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAOwCAAABADAAMAAw
-ADAAMAA0AGIAMAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMA
-XwBhADgAYgBmADYAMgBmADgAYQA1ADIAMwA0ADQAZgAzADgAMQBhADEANQBiADAAMAAyADEANQA3
-AGUAZQAwADIAAABAAA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4ANwA1ADUA
-MwAuADMANgA0ADUANAAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBh
-ADgAYgBmADYAMgBmADgAYQA1ADIAMwA0ADQAZgAzADgAMQBhADEANQBiADAAMAAyADEANQA3AGUA
-ZQAwADIALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBw
-AHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIAMAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkA
-bABlAG4AYQBtAGUAAABTAEMAXwBhADgAYgBmADYAMgBmADgAYQA1ADIAMwA0ADQAZgAzADgAMQBh
-ADEANQBiADAAMAAyADEANQA3AGUAZQAwADIALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQA
-TgBhAG0AZQAAAAAAUwBDAF8AYQA4AGIAZgA2ADIAZgA4AGEANQAyADMANAA0AGYAMwA4ADEAYQAx
-ADUAYgAwADAAMgAxADUANwBlAGUAMAAyAAAARAAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkA
-bwBuAAAAMQAuADAALgA3ADUANQAzAC4AMwA2ADQANQA0AAAAAABIAA8AAQBBAHMAcwBlAG0AYgBs
-AHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgA3ADUANQAzAC4AMwA2ADQANQA0AAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAKAxAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA1BMAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACw
+MwAAAAAAAEgAAAACAAUAwCIAALgQAAABAAAAAAAAAAgiAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4CKA0AAAoCAnMUAAAGfQEAAAQCAnMVAAAGfQIAAAQqkgRy
+AQAAcBpvDgAACiwVAgUCAygPAAAKDgRzCQAABm8DAAAGKkorBwIDbwQAAAYDbxIAAAYt8SoGKh4C
+KBEAAAoqHgIoEgAACip2AygTAAAKbxAAAAYDA28KAAAGbxQAAApvDgAABioeAigBAAAGKioCAwQF
+KBUAAAoqUgJ7FgAACgJ7FwAAChaUbxgAAAoqIgIWKBkAAAoqUgJ7FgAACgJ7FwAACheUbxgAAAoq
+IgIXKBkAAAoqJgIYAygaAAAKKloDLAgCGCgbAAAKKnIRAABwcxwAAAp6OgIZA4wHAAABKBoAAAoq
+WgMsCAIZKBsAAAoqchEAAHBzHAAACnoeAigdAAAKKh4CKB4AAAoqOgIoHwAACgIDfQMAAAQqOgIo
+HwAACgIDfQQAAAQqHgIoHwAACioTMAIALQAAAAEAABF+BQAABC0gcq4AAHDQBwAAAighAAAKbyIA
+AApzIwAACgoGgAUAAAR+BQAABCoafgYAAAQqHgKABgAABCoafgcAAAQqLnMbAAAGgAcAAAQqHgIo
+JgAACioAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBt
+c2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+PWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAA
+AAAAAAAAAABQQURQQURQtAAAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAPAF
+AAAjfgAAXAYAAHwHAAAjU3RyaW5ncwAAAADYDQAAIAEAACNVUwD4DgAAEAAAACNHVUlEAAAACA8A
+ALABAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+iUzABYAAAEAAAAgAAAACAAAAAcAAAAcAAAA
+EQAAACYAAAAPAAAAAQAAAAMAAAALAAAADAAAAAEAAAAEAAAAAQAAAAAACgABAAAAAAAGAO4AzQAG
+AP4AzQAKABsBFAEOADcBIgESAHYBzQAGAIUBzQAKAFMCFAEKACADDwMKAFEDPAMKACoEEAQKAFUE
+QwQKAGwEQwQKAIkEQwQKAKgEQwQKAMEEQwQKANoEQwQKAPUEQwQKABAFQwQKACkFQwQKAGIFQgUK
+AIIFQgUKAMQFFAEKAMsFFAEGAPQFzQAKAEoGFAEKAHcGZAYKAJQGFAEKAJkGFAEKAL0GQwQOAOkG
+0wYOAAIH0wYKABcHQgUAAAAAAQAAAAAAAQABAAEAEAAyAAAABQABAAEAAQAQAEAAAAAIAAMABQAB
+ABAASwAAAAkAAwAJAAEAEABYAAAADQADABQAAQAQAGQAAAANAAQAFQAAABAAbgB4AA0ABQAWAAAB
+EACnAHgAEQAHABoABgBYABMABgBkABcAAQD/Al4AAQD/Al4AEQAwA2gAEQBdA2wAEQChA4oAUCAA
+AAAAhhhPARsAAQBwIAAAAADGAJMBHwABAJUgAAAAAMYBoAEpAAUAqCAAAAAAxgG0ASkABgCqIAAA
+AADGAMsBGwAHALIgAAAAAMYA1gEbAAcAuiAAAAAAxgC0ASkABwDYIAAAAACGGE8BGwAIAOAgAAAA
+AIYYTwEvAAgA6yAAAAAAhgjiATkACwAAIQAAAACGCPEBPQALAAkhAAAAAIYIBwI5AAsAHiEAAAAA
+hggdAj0ACwAnIQAAAACGCDoCQQALADEhAAAAAIYIQwJGAAwASCEAAAAAhghYAksADQBXIQAAAACG
+CGUCRgAOAG4hAAAAAIYAeQI9AA8AdiEAAAAAhgCBAj0ADwB+IQAAAACGGE8BYgAPAI0hAAAAAIYY
+TwFiABAAnCEAAAAAgxhPARsAEQCkIQAAAACTCG0DcAARAN0hAAAAAJMIgQN1ABEA5CEAAAAAkwiN
+A3oAEQDsIQAAAACWCLEDjgASAP8hAAAAAIYYTwEbABIA8yEAAAAAkRgyB/MAEgAAAAEAxQMAAAIA
+zQMAAAMA1wMAAAQA3gMAAAEA1wMAAAEA6AMAAAEA6AMAAAEA1wMAAAIA7AMAAAMA3gMAAAEAAAQA
+AAEAAAQAAAEAAAQAAAEAAAQAAAEABgQAAAEABgQAAAEAAARRAE8BQQBZAE8BQQBhAE8BQQBpAE8B
+QQBxAE8BQQB5AE8BQQCBAE8BQQCJAE8BQQCRAE8BQQCZAE8BQQChAE8BmACpAE8BGwAJAE8BGwCx
+ANwFnQAJAOMFpADBAE8BGwAJAMsBGwAJANYBGwA5ABsGrwCxACMGOQARAE8BLwARANcDtAARAOwD
+uAApACgGvAARADIGwQARADkGxgARAEIGmADJAE8BQQARAHkCPQARAIECPQAZAE8BGwDRAE8BGwDZ
+AKsGzADZAMYG0wBBAE8B2ADxAE8B5AABAU8BGwAhAE8BGwAuABsAaAEuAGMAjgEuAAsA9wAuABMA
+PwEuACMAaAEuACsAaAEuADMAPwEuADsAbgEuAEMAaAEuAFsAhQFjAIMAqgDhACsBqgDjAAMBqgAp
+ASMB6gBJASMB6gDfAAQAAQAHAAkACAALAAAAjQJRAAAAmAJVAAAAqgJRAAAAvAJVAAAA1QJRAAAA
+2gJVAAAA5gJZAAAA7wJVAAAAIAOAAAAAmQOFAAAAvQOTAAIACgADAAIACwAFAAIADAAHAAIADQAJ
+AAEADgALAAEADwANAAEAEAAPAAEAEQARAAIAFwATAAIAGAAVAAEAGQAVAAIAGgAXAASAAAABAAAA
+gh3YmwAAAAAAAKAFAAALAAAAAAAAAAAAAAABALAAAAAAAAQAAAAAAAAAAAAAAAoACwEAAAAABAAA
+AAAAAAAAAAAACgAUAQAAAAALAAAAAAAAAAAAAAABAFUBAAAAAAAAAAABAAAAOQcAAAAAADxNb2R1
+bGU+AFNDX2E4YmY2MmY4YTUyMzQ0ZjM4MWExNWIwMDIxNTdlZTAyLmRsbABVc2VyQ29tcG9uZW50
+AFNjcmlwdE1haW4ASW5wdXQwQnVmZmVyAENvbm5lY3Rpb25zAFZhcmlhYmxlcwBSZXNvdXJjZXMA
+U0NfYThiZjYyZjhhNTIzNDRmMzgxYTE1YjAwMjE1N2VlMDIuUHJvcGVydGllcwBTZXR0aW5ncwBN
+aWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVs
+aW5lAFNjcmlwdENvbXBvbmVudABTY3JpcHRCdWZmZXIAbXNjb3JsaWIAU3lzdGVtAE9iamVjdABT
+eXN0ZW0uQ29uZmlndXJhdGlvbgBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQAuY3RvcgBNaWNyb3Nv
+ZnQuU3FsU2VydmVyLlBpcGVsaW5lSG9zdABQaXBlbGluZUJ1ZmZlcgBPdXRwdXROYW1lTWFwAFBy
+b2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cAUHJl
+RXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRfVGFyaWZmY29kZQBnZXRfVGFyaWZmY29kZV9Jc051bGwA
+Z2V0X1RhcmlmZkRlc2NyaXB0aW9uAGdldF9UYXJpZmZEZXNjcmlwdGlvbl9Jc051bGwAc2V0X2Nv
+ZGUAc2V0X2NvZGVfSXNOdWxsAEd1aWQAc2V0X2lkdGFyaWZmAHNldF9pZHRhcmlmZl9Jc051bGwA
+TmV4dFJvdwBFbmRPZlJvd3NldABUYXJpZmZjb2RlAFRhcmlmZmNvZGVfSXNOdWxsAFRhcmlmZkRl
+c2NyaXB0aW9uAFRhcmlmZkRlc2NyaXB0aW9uX0lzTnVsbABjb2RlAGNvZGVfSXNOdWxsAGlkdGFy
+aWZmAGlkdGFyaWZmX0lzTnVsbABQYXJlbnRDb21wb25lbnQAU3lzdGVtLlJlc291cmNlcwBSZXNv
+dXJjZU1hbmFnZXIAcmVzb3VyY2VNYW4AU3lzdGVtLkdsb2JhbGl6YXRpb24AQ3VsdHVyZUluZm8A
+cmVzb3VyY2VDdWx0dXJlAGdldF9SZXNvdXJjZU1hbmFnZXIAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1
+cmUAQ3VsdHVyZQBkZWZhdWx0SW5zdGFuY2UAZ2V0X0RlZmF1bHQARGVmYXVsdABJbnB1dElEAElu
+cHV0TmFtZQBCdWZmZXIAT3V0cHV0TWFwAFJvdwBCdWZmZXJDb2x1bW5JbmRleGVzAHZhbHVlAENv
+bXBvbmVudABTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0
+ZQBTeXN0ZW0uUmVmbGVjdGlvbgBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5RGVzY3Jp
+cHRpb25BdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5Q29t
+cGFueUF0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRB
+dHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAQXNzZW1ibHlDdWx0dXJlQXR0cmli
+dXRlAEFzc2VtYmx5VmVyc2lvbkF0dHJpYnV0ZQBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZp
+Y2VzAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlB
+dHRyaWJ1dGUAU0NfYThiZjYyZjhhNTIzNDRmMzgxYTE1YjAwMjE1N2VlMDIAU3RyaW5nAFN0cmlu
+Z0NvbXBhcmlzb24ARXF1YWxzAEdldENvbHVtbkluZGV4ZXMAU1NJU1NjcmlwdENvbXBvbmVudEVu
+dHJ5UG9pbnRBdHRyaWJ1dGUATmV3R3VpZABUcmltAEdldFN0cmluZwBJc051bGwAc2V0X0l0ZW0A
+U2V0TnVsbABJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAFN5c3RlbS5EaWFnbm9zdGljcwBEZWJ1
+Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAFR5cGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZy
+b21IYW5kbGUAQXNzZW1ibHkAZ2V0X0Fzc2VtYmx5AFN5c3RlbS5Db21wb25lbnRNb2RlbABFZGl0
+b3JCcm93c2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0
+ZWRBdHRyaWJ1dGUALmNjdG9yAFNDX2E4YmY2MmY4YTUyMzQ0ZjM4MWExNWIwMDIxNTdlZTAyLlBy
+b3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwAAD0kAbgBwAHUAdAAgADAAAICbSQBzAE4AdQBs
+AGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAA
+RgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAg
+AGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAABxUwBDAF8AYQA4AGIAZgA2ADIAZgA4AGEA
+NQAyADMANAA0AGYAMwA4ADEAYQAxADUAYgAwADAAMgAxADUANwBlAGUAMAAyAC4AUAByAG8AcABl
+AHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAXHKRBCZbdSqLbTf+xkqArAAiJhF3NgIDM
+kQi3elxWGTTgiQMGEhQDBhIYAyAAAQkgBAEIDhIVEhkFIAEBEhAJIAMBEhUdCBIZAyAADgMgAAIE
+IAEBDgQgAQECBSABAREdAygADgMoAAIEKAARHQMGEgUFIAEBEgUDBhIhAwYSJQQAABIhBAAAEiUF
+AAEBEiUECAASIQQIABIlAwYSIAQAABIgBAgAEiAEIAEBCAYgAgIOEV0FIAEdCAgEAQAAAAQAABEd
+AwYSFQMGHQgEIAEOCAQgAQIIBSACAQgcBgABEm0RcQQgABJ1BiACAQ4SdQQHARIhBSABARF9CAEA
+AgAAAAAAAwAAAUcBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuMAEAVA4URnJhbWV3b3JrRGlz
+cGxheU5hbWUQLk5FVCBGcmFtZXdvcmsgNCgBACNTQ19hOGJmNjJmOGE1MjM0NGYzODFhMTViMDAy
+MTU3ZWUwMgAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDIwAAAIAQAIAAAAAAAeAQABAFQCFldy
+YXBOb25FeGNlcHRpb25UaHJvd3MBAAAAoDMAAAAAAAAAAAAAvjMAAAAgAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAALAzAAAAAAAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAg
+ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAACwAwAAAAAAAAAAAACwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEA2JuCHQAAAQDYm4IdPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAEEAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAA7AIAAAEAMAAwADAA
+MAAwADQAYgAwAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAQwBf
+AGEAOABiAGYANgAyAGYAOABhADUAMgAzADQANABmADMAOAAxAGEAMQA1AGIAMAAwADIAMQA1ADcA
+ZQBlADAAMgAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA3ADUANQA0
+AC4AMwA5ADgAOQA2AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfAGEA
+OABiAGYANgAyAGYAOABhADUAMgAzADQANABmADMAOAAxAGEAMQA1AGIAMAAwADIAMQA1ADcAZQBl
+ADAAMgAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAA
+eQByAGkAZwBoAHQAIABAACAAIAAyADAAMgAwAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBs
+AGUAbgBhAG0AZQAAAFMAQwBfAGEAOABiAGYANgAyAGYAOABhADUAMgAzADQANABmADMAOAAxAGEA
+MQA1AGIAMAAwADIAMQA1ADcAZQBlADAAMgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABO
+AGEAbQBlAAAAAABTAEMAXwBhADgAYgBmADYAMgBmADgAYQA1ADIAMwA0ADQAZgAzADgAMQBhADEA
+NQBiADAAMAAyADEANQA3AGUAZQAwADIAAABEAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBv
+AG4AAAAxAC4AMAAuADcANQA1ADQALgAzADkAOAA5ADYAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
+eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADcANQA1ADQALgAzADkAOAA5ADYAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAA0DMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </arrayElements>
                 </property>
                 <property
@@ -3787,7 +3858,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   name="MetadataChecksum"
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
-                  typeConverter="NOTBROWSABLE">1f869be3a4f45cb1ea163ba0276d7615</property>
+                  typeConverter="NOTBROWSABLE">3c3a3f35c9e7bd1f1b8cf33574c0e2a7</property>
                 <property
                   name="UserComponentTypeName"
                   dataType="System.String">Microsoft.SqlServer.Dts.Pipeline.ScriptComponentHost, Microsoft.SqlServer.TxScript, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
@@ -3797,6 +3868,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   refId="Package\Importaciones Azucares y Confiteria\Script Component 1.Inputs[Input 0]"
                   name="Input 0"
                   hasSideEffects="true">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Script Component 1.Inputs[Input 0].Columns[Tariff_code]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Aggregate 1.Outputs[Aggregate Output 1].Columns[Tariff_code]"
+                      cachedName="Tariff_code"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Script Component 1.Inputs[Input 0].Columns[Tariff_Description]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Aggregate 1.Outputs[Aggregate Output 1].Columns[Tariff_Description]"
+                      cachedName="Tariff_Description"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                  </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -3806,6 +3891,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   name="Output 0"
                   synchronousInputId="Package\Importaciones Azucares y Confiteria\Script Component 1.Inputs[Input 0]">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[code]"
+                      name="code"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[code]"
+                      length="10"
+                      dataType="str"
+                      codePage="1252" />
                     <outputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[id_tariff]"
                       name="id_tariff"
@@ -4861,6 +4953,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           description="Specifies the sort order of the column.">0</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Sort.Inputs[Sort Input].Columns[name]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[name]"
+                      cachedName="name"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="NewComparisonFlags"
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data.">0</property>
+                        <property
+                          name="NewSortKeyPosition"
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column.">0</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4897,6 +5007,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           containsID="true">#{Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[id_country]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Sort.Outputs[Sort Output].Columns[name]"
+                      name="name"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Sort.Outputs[Sort Output].Columns[name]"
+                      length="100"
+                      dataType="str"
+                      codePage="1252">
+                      <properties>
+                        <property
+                          name="SortColumnId"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0].Columns[name]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -5214,6 +5339,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Sort 2.Inputs[Sort Input].Columns[code]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[code]"
+                      cachedName="code"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedCodepage="1252">
+                      <properties>
+                        <property
+                          name="NewComparisonFlags"
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data.">0</property>
+                        <property
+                          name="NewSortKeyPosition"
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column.">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Sort 2.Inputs[Sort Input].Columns[id_tariff]"
                       lineageId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[id_tariff]"
                       cachedName="id_tariff"
@@ -5266,6 +5409,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           containsID="true">#{Package\Importaciones Azucares y Confiteria\Aggregate 1.Outputs[Aggregate Output 1].Columns[Tariff_Description]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Importaciones Azucares y Confiteria\Sort 2.Outputs[Sort Output].Columns[code]"
+                      name="code"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 2.Outputs[Sort Output].Columns[code]"
+                      length="10"
+                      dataType="str"
+                      codePage="1252">
+                      <properties>
+                        <property
+                          name="SortColumnId"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0].Columns[code]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -5767,12 +5925,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input].Columns[Tariff_code]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_code]"
-                      cachedName="Tariff_code"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedSortKeyPosition="-1">
+                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input].Columns[id]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]"
+                      cachedName="id"
+                      cachedDataType="guid">
                       <properties>
                         <property
                           name="NewComparisonFlags"
@@ -5781,24 +5937,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                         <property
                           name="NewSortKeyPosition"
                           dataType="System.Int32"
-                          description="Specifies the sort order of the column.">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input].Columns[Tariff_Description]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_Description]"
-                      cachedName="Tariff_Description"
-                      cachedDataType="wstr"
-                      cachedLength="255">
-                      <properties>
-                        <property
-                          name="NewComparisonFlags"
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data.">0</property>
-                        <property
-                          name="NewSortKeyPosition"
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column.">0</property>
+                          description="Specifies the sort order of the column.">1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5834,22 +5973,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           description="Specifies the sort order of the column.">0</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input].Columns[id]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]"
-                      cachedName="id"
-                      cachedDataType="guid">
-                      <properties>
-                        <property
-                          name="NewComparisonFlags"
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data.">0</property>
-                        <property
-                          name="NewSortKeyPosition"
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column.">1</property>
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -5874,31 +5997,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[Tariff_code]"
-                      name="Tariff_code"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[Tariff_code]"
-                      length="255"
-                      dataType="wstr">
+                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id]"
+                      name="id"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id]"
+                      dataType="guid"
+                      sortKeyPosition="1">
                       <properties>
                         <property
                           name="SortColumnId"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_code]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[Tariff_Description]"
-                      name="Tariff_Description"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[Tariff_Description]"
-                      length="255"
-                      dataType="wstr">
-                      <properties>
-                        <property
-                          name="SortColumnId"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Tariff_Description]}</property>
+                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -5928,20 +6037,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[Year]}</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id]"
-                      name="id"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Sort 5.Outputs[Sort Output].Columns[id]"
-                      dataType="guid"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          name="SortColumnId"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          containsID="true">#{Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output].Columns[id]}</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -5961,7 +6056,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Importaciones Azucares y Confiteria\Unpivot.Inputs[Unpivot Input].Columns[1994_R]"
-                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Output].Columns[1994_R]"
+                      lineageId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output].Columns[1994_R]"
                       cachedName="1994_R"
                       cachedDataType="r8">
                       <properties>
@@ -6560,13 +6655,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Derived Column Output]"
               name="Derived Column Output"
-              startId="Package\Importaciones Azucares y Confiteria\Derived Column.Outputs[Derived Column Output]"
+              startId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Outputs[Derived Column Output]"
               endId="Package\Importaciones Azucares y Confiteria\Unpivot.Inputs[Unpivot Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Excel Source Output]"
               name="Excel Source Output"
               startId="Package\Importaciones Azucares y Confiteria\Excel Source.Outputs[Excel Source Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Derived Column.Inputs[Derived Column Input]" />
+              endId="Package\Importaciones Azucares y Confiteria\Derived Column 1.Inputs[Derived Column Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output2]"
               name="Merge Join Output"
@@ -6575,33 +6670,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output1]"
               name="Merge Join Output"
-              startId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output]"
-              name="Merge Join Output"
               startId="Package\Importaciones Azucares y Confiteria\Merge Join.Outputs[Merge Join Output]"
               endId="Package\Importaciones Azucares y Confiteria\Sort 4.Inputs[Sort Input]" />
             <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output]"
+              name="Merge Join Output"
+              startId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Outputs[Merge Join Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Sort 5.Inputs[Sort Input]" />
+            <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 12]"
+              name="Multicast Output 1"
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 1]"
+              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
               name="Multicast Output 1"
               startId="Package\Importaciones Azucares y Confiteria\Multicast.Outputs[Multicast Output 1]"
               endId="Package\Importaciones Azucares y Confiteria\Aggregate 1.Inputs[Aggregate Input 1]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
-              name="Multicast Output 1"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 1]"
-              endId="Package\Importaciones Azucares y Confiteria\Sort.Inputs[Sort Input]" />
-            <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
               name="Multicast Output 1"
               startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 1]"
-              endId="Package\Importaciones Azucares y Confiteria\Sort 2.Inputs[Sort Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 22]"
-              name="Multicast Output 2"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 2]"
-              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination.Inputs[ADO NET Destination Input]" />
+              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
               name="Multicast Output 2"
@@ -6610,8 +6700,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
               name="Multicast Output 2"
-              startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 2]"
-              endId="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2.Inputs[ADO NET Destination Input]" />
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 1.Outputs[Multicast Output 2]"
+              endId="Package\Importaciones Azucares y Confiteria\Sort.Inputs[Sort Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 31]"
+              name="Multicast Output 3"
+              startId="Package\Importaciones Azucares y Confiteria\Multicast 2.Outputs[Multicast Output 3]"
+              endId="Package\Importaciones Azucares y Confiteria\Sort 2.Inputs[Sort Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 3]"
               name="Multicast Output 3"
@@ -6625,38 +6720,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Output 02]"
               name="Output 0"
-              startId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0]"
-              endId="Package\Importaciones Azucares y Confiteria\Multicast 1.Inputs[Multicast Input 1]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
-              name="Output 0"
               startId="Package\Importaciones Azucares y Confiteria\Script Component 2.Outputs[Output 0]"
               endId="Package\Importaciones Azucares y Confiteria\Multicast.Inputs[Multicast Input 1]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
               name="Output 0"
               startId="Package\Importaciones Azucares y Confiteria\Script Component 1.Outputs[Output 0]"
               endId="Package\Importaciones Azucares y Confiteria\Multicast 2.Inputs[Multicast Input 1]" />
             <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
+              name="Output 0"
+              startId="Package\Importaciones Azucares y Confiteria\Script Component.Outputs[Output 0]"
+              endId="Package\Importaciones Azucares y Confiteria\Multicast 1.Inputs[Multicast Input 1]" />
+            <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output3]"
+              name="Sort Output"
+              startId="Package\Importaciones Azucares y Confiteria\Sort 4.Outputs[Sort Output]"
+              endId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Left Input]" />
+            <path
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
               name="Sort Output"
               startId="Package\Importaciones Azucares y Confiteria\Sort 3.Outputs[Sort Output]"
               endId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Left Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
               name="Sort Output"
               startId="Package\Importaciones Azucares y Confiteria\Sort 2.Outputs[Sort Output]"
               endId="Package\Importaciones Azucares y Confiteria\Merge Join 1.Inputs[Merge Join Right Input]" />
             <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
+              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
               name="Sort Output"
               startId="Package\Importaciones Azucares y Confiteria\Sort.Outputs[Sort Output]"
               endId="Package\Importaciones Azucares y Confiteria\Merge Join.Inputs[Merge Join Left Input]" />
-            <path
-              refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
-              name="Sort Output"
-              startId="Package\Importaciones Azucares y Confiteria\Sort 4.Outputs[Sort Output]"
-              endId="Package\Importaciones Azucares y Confiteria\Merge Join 2.Inputs[Merge Join Left Input]" />
             <path
               refId="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
               name="Sort Output"
@@ -6702,296 +6797,102 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="114,42"
-          Id="Package\Importaciones Azucares y Confiteria\Unpivot"
-          TopLeft="542,34" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Importaciones Azucares y Confiteria\Excel Source"
-          TopLeft="45,35" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Importaciones Azucares y Confiteria\Derived Column"
-          TopLeft="251,37" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Importaciones Azucares y Confiteria\Multicast"
-          TopLeft="530,189" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Excel Source Output]"
-          TopLeft="183,57">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="68,0"
-              Start="0,0"
-              End="60.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="60.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="126,42"
-          Id="Package\Importaciones Azucares y Confiteria\Aggregate"
-          TopLeft="363,190" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
-          TopLeft="530,210.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-41,0"
-              Start="0,0"
-              End="-33.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-33.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162,42"
-          Id="Package\Importaciones Azucares y Confiteria\Script Component"
-          TopLeft="160,191" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Country]"
-          TopLeft="363,211.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-41,0"
-              Start="0,0"
-              End="-33.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-33.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129,42"
-          Id="Package\Importaciones Azucares y Confiteria\Multicast 1"
-          TopLeft="177,286" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 02]"
-          TopLeft="241.25,233">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53"
-              Start="0,0"
-              End="0,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="97,42"
-          Id="Package\Importaciones Azucares y Confiteria\Sort"
-          TopLeft="372,284" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
-          TopLeft="306,306">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66,0"
-              Start="0,0"
-              End="58.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="58.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="135,42"
+          Id="Package\Importaciones Azucares y Confiteria\Aggregate 1"
+          TopLeft="719,190" />
         <NodeLayout
           Size="121,42"
           Id="Package\Importaciones Azucares y Confiteria\Sort 1"
-          TopLeft="485,284" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 3]"
-          TopLeft="595,231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-49.5,53"
-              Start="0,0"
-              End="-49.5,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.5"
-                    Point2="0,26.5"
-                    Point3="-4,26.5" />
-                  <mssgle:LineSegment
-                    End="-45.5,26.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-45.5,26.5"
-                    Point2="-49.5,26.5"
-                    Point3="-49.5,30.5" />
-                  <mssgle:LineSegment
-                    End="-49.5,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="503,284" />
         <NodeLayout
-          Size="135,42"
-          Id="Package\Importaciones Azucares y Confiteria\Aggregate 1"
-          TopLeft="701,190" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 12]"
-          TopLeft="660,210.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="41,0"
-              Start="0,0"
-              End="33.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="33.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Importaciones Azucares y Confiteria\Script Component 1"
-          TopLeft="886,189" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Aggregate Output 1]"
-          TopLeft="836,210.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="50,0"
-              Start="0,0"
-              End="42.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="42.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129,42"
-          Id="Package\Importaciones Azucares y Confiteria\Multicast 2"
-          TopLeft="911,285" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
-          TopLeft="973.5,231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106,42"
-          Id="Package\Importaciones Azucares y Confiteria\Sort 2"
-          TopLeft="756,284" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
-          TopLeft="911,305.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-49,0"
-              Start="0,0"
-              End="-41.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-41.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="130,42"
+          Id="Package\Importaciones Azucares y Confiteria\Multicast"
+          TopLeft="548,189" />
         <NodeLayout
           Size="129,42"
           Id="Package\Importaciones Azucares y Confiteria\Merge Join"
-          TopLeft="434,373" />
+          TopLeft="452,373" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Importaciones Azucares y Confiteria\Script Component 1"
+          TopLeft="904,189" />
+        <NodeLayout
+          Size="106,42"
+          Id="Package\Importaciones Azucares y Confiteria\Sort 4"
+          TopLeft="466,452" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Importaciones Azucares y Confiteria\Data Conversion"
+          TopLeft="545,623" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Importaciones Azucares y Confiteria\Aggregate"
+          TopLeft="381,190" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination 1"
+          TopLeft="528,721" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Importaciones Azucares y Confiteria\Script Component 2"
+          TopLeft="524,97" />
+        <NodeLayout
+          Size="97,42"
+          Id="Package\Importaciones Azucares y Confiteria\Sort"
+          TopLeft="390,284" />
+        <NodeLayout
+          Size="114,42"
+          Id="Package\Importaciones Azucares y Confiteria\Unpivot"
+          TopLeft="555,11" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Importaciones Azucares y Confiteria\Excel Source"
+          TopLeft="76,10" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Importaciones Azucares y Confiteria\Script Component"
+          TopLeft="178,191" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Importaciones Azucares y Confiteria\Merge Join 2"
+          TopLeft="557,529" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination"
+          TopLeft="169,391" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2"
+          TopLeft="897,372" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Importaciones Azucares y Confiteria\Sort 3"
+          TopLeft="638,284" />
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
-          TopLeft="420.5,326">
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Unpivot Output]"
+          TopLeft="610.75,53">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
+          TopLeft="438.5,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7023,51 +6924,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Importaciones Azucares y Confiteria\Merge Join 1"
-          TopLeft="670,373" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Importaciones Azucares y Confiteria\Sort 3"
-          TopLeft="620,284" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 4]"
-          TopLeft="615.333333333333,231">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="58.6666666666666,53"
-              Start="0,0"
-              End="58.6666666666666,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.5866261398176" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5866261398176"
-                    Point2="0,22.5866261398176"
-                    Point3="4,22.5866261398176" />
-                  <mssgle:LineSegment
-                    End="54.6666666666666,22.5866261398176" />
-                  <mssgle:CubicBezierSegment
-                    Point1="54.6666666666666,22.5866261398176"
-                    Point2="58.6666666666666,22.5866261398176"
-                    Point3="58.6666666666666,26.5866261398176" />
-                  <mssgle:LineSegment
-                    End="58.6666666666666,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output2]"
-          TopLeft="545.5,326">
+          TopLeft="563.5,326">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7101,30 +6960,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output3]"
-          TopLeft="674,326">
+          TopLeft="519,494">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="65,47"
+              EndConnector="85.3333333333334,35"
               Start="0,0"
-              End="65,39.5">
+              End="85.3333333333334,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5" />
+                    End="0,16.7593123209169" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.5"
-                    Point2="0,23.5"
-                    Point3="4,23.5" />
+                    Point1="0,16.7593123209169"
+                    Point2="0,20.7593123209169"
+                    Point3="4,20.7593123209169" />
                   <mssgle:LineSegment
-                    End="61,23.5" />
+                    End="81.3333333333334,20.7593123209169" />
                   <mssgle:CubicBezierSegment
-                    Point1="61,23.5"
-                    Point2="65,23.5"
-                    Point3="65,27.5" />
+                    Point1="81.3333333333334,20.7593123209169"
+                    Point2="85.3333333333334,20.7593123209169"
+                    Point3="85.3333333333334,24.7593123209169" />
                   <mssgle:LineSegment
-                    End="65,39.5" />
+                    End="85.3333333333334,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7134,87 +6993,53 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
-          TopLeft="809,326">
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 02]"
+          TopLeft="611.25,139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-48.3333333333334,47"
+              EndConnector="0,50"
               Start="0,0"
-              End="-48.3333333333334,39.5">
+              End="0,42.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.8767908309455" />
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 4]"
+          TopLeft="633.333333333333,231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.6666666666666,53"
+              Start="0,0"
+              End="58.6666666666666,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5866261398176" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,23.8767908309455"
-                    Point2="0,27.8767908309455"
-                    Point3="-4,27.8767908309455" />
+                    Point1="0,18.5866261398176"
+                    Point2="0,22.5866261398176"
+                    Point3="4,22.5866261398176" />
                   <mssgle:LineSegment
-                    End="-44.3333333333334,27.8767908309455" />
+                    End="54.6666666666666,22.5866261398176" />
                   <mssgle:CubicBezierSegment
-                    Point1="-44.3333333333334,27.8767908309455"
-                    Point2="-48.3333333333334,27.8767908309455"
-                    Point3="-48.3333333333334,31.8767908309455" />
+                    Point1="54.6666666666666,22.5866261398176"
+                    Point2="58.6666666666666,22.5866261398176"
+                    Point3="58.6666666666666,26.5866261398176" />
                   <mssgle:LineSegment
-                    End="-48.3333333333334,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination"
-          TopLeft="149,377" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 22]"
-          TopLeft="239.75,328">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49"
-              Start="0,0"
-              End="0,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination 1"
-          TopLeft="509,718" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Importaciones Azucares y Confiteria\ADO NET Destination 2"
-          TopLeft="879,372" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
-          TopLeft="974,327">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
+                    End="58.6666666666666,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7224,101 +7049,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Derived Column Output]"
-          TopLeft="404,56.5">
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 3]"
+          TopLeft="613,231">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="138,0"
+              EndConnector="-49.5,53"
               Start="0,0"
-              End="130.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="130.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Importaciones Azucares y Confiteria\Script Component 2"
-          TopLeft="508,117" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Unpivot Output]"
-          TopLeft="596.25,76">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41"
-              Start="0,0"
-              End="0,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
-          TopLeft="594.25,159">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
+              End="-49.5,45.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106,42"
-          Id="Package\Importaciones Azucares y Confiteria\Sort 4"
-          TopLeft="448,452" />
-        <NodeLayout
-          Size="106,42"
-          Id="Package\Importaciones Azucares y Confiteria\Sort 5"
-          TopLeft="684,447" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Importaciones Azucares y Confiteria\Merge Join 2"
-          TopLeft="539,528" />
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output]"
-          TopLeft="499.75,415">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37"
-              Start="0,0"
-              End="0,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="-4,26.5" />
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="-45.5,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-45.5,26.5"
+                    Point2="-49.5,26.5"
+                    Point3="-49.5,30.5" />
+                  <mssgle:LineSegment
+                    End="-49.5,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7328,19 +7083,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output1]"
-          TopLeft="738,415">
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 21]"
+          TopLeft="548,210.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32"
+              EndConnector="-41,0"
               Start="0,0"
-              End="0,24.5">
+              End="-33.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5" />
+                    End="-33.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7350,31 +7105,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output]"
-          TopLeft="501,494">
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 11]"
+          TopLeft="678,210.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="107,34"
+              EndConnector="41,0"
               Start="0,0"
-              End="107,26.5">
+              End="33.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13"
-                    Point2="0,17"
-                    Point3="4,17" />
-                  <mssgle:LineSegment
-                    End="103,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="103,17"
-                    Point2="107,17"
-                    Point3="107,21" />
-                  <mssgle:LineSegment
-                    End="107,26.5" />
+                    End="33.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7383,47 +7126,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
-          TopLeft="737,489">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-107.333333333333,39"
-              Start="0,0"
-              End="-107.333333333333,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.1318051575931" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.1318051575931"
-                    Point2="0,23.1318051575931"
-                    Point3="-4,23.1318051575931" />
-                  <mssgle:LineSegment
-                    End="-103.333333333333,23.1318051575931" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-103.333333333333,23.1318051575931"
-                    Point2="-107.333333333333,23.1318051575931"
-                    Point3="-107.333333333333,27.1318051575931" />
-                  <mssgle:LineSegment
-                    End="-107.333333333333,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Importaciones Azucares y Confiteria\Data Conversion"
-          TopLeft="526,622" />
         <EdgeLayout
           Id="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output2]"
-          TopLeft="605.75,570">
+          TopLeft="624.25,571">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7444,8 +7149,354 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output1]"
+          TopLeft="517.75,415">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Importaciones Azucares y Confiteria.Paths[Data Conversion Output]"
-          TopLeft="603,664">
+          TopLeft="622,665">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Country]"
+          TopLeft="381,211.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-41,0"
+              Start="0,0"
+              End="-33.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-33.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Aggregate Output 1]"
+          TopLeft="854,210.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50,0"
+              Start="0,0"
+              End="42.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="42.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Importaciones Azucares y Confiteria\Derived Column 1"
+          TopLeft="318,12" />
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Derived Column Output]"
+          TopLeft="480,32.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75,0"
+              Start="0,0"
+              End="67.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="67.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Excel Source Output]"
+          TopLeft="214,32">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="104,0"
+              Start="0,0"
+              End="96.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="96.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Importaciones Azucares y Confiteria\Multicast 2"
+          TopLeft="920,288" />
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 01]"
+          TopLeft="987,231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 1]"
+          TopLeft="987.5,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="106,42"
+          Id="Package\Importaciones Azucares y Confiteria\Sort 2"
+          TopLeft="762,284" />
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 31]"
+          TopLeft="920,307">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-52,0"
+              Start="0,0"
+              End="-44.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-44.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Importaciones Azucares y Confiteria\Merge Join 1"
+          TopLeft="690,373" />
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output5]"
+          TopLeft="815,326">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-56,47"
+              Start="0,0"
+              End="-56,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="-4,23.5" />
+                  <mssgle:LineSegment
+                    End="-52,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-52,23.5"
+                    Point2="-56,23.5"
+                    Point3="-56,27.5" />
+                  <mssgle:LineSegment
+                    End="-56,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output4]"
+          TopLeft="692,326">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.3333333333334,47"
+              Start="0,0"
+              End="45.3333333333334,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8767908309455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.8767908309455"
+                    Point2="0,27.8767908309455"
+                    Point3="4,27.8767908309455" />
+                  <mssgle:LineSegment
+                    End="41.3333333333334,27.8767908309455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.3333333333334,27.8767908309455"
+                    Point2="45.3333333333334,27.8767908309455"
+                    Point3="45.3333333333334,31.8767908309455" />
+                  <mssgle:LineSegment
+                    End="45.3333333333334,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="106,42"
+          Id="Package\Importaciones Azucares y Confiteria\Sort 5"
+          TopLeft="703,452" />
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Merge Join Output]"
+          TopLeft="757.5,415">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Sort Output1]"
+          TopLeft="756,494">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-108.333333333333,35"
+              Start="0,0"
+              End="-108.333333333333,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.7593123209169" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.7593123209169"
+                    Point2="0,20.7593123209169"
+                    Point3="-4,20.7593123209169" />
+                  <mssgle:LineSegment
+                    End="-104.333333333333,20.7593123209169" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-104.333333333333,20.7593123209169"
+                    Point2="-108.333333333333,20.7593123209169"
+                    Point3="-108.333333333333,24.7593123209169" />
+                  <mssgle:LineSegment
+                    End="-108.333333333333,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Importaciones Azucares y Confiteria\Multicast 1"
+          TopLeft="199,287" />
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Output 0]"
+          TopLeft="261.25,233">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7465,9 +7516,61 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 12]"
+          TopLeft="260.75,329">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Importaciones Azucares y Confiteria.Paths[Multicast Output 2]"
+          TopLeft="328,306.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62,0"
+              Start="0,0"
+              End="54.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="54.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importaciones Azucares y Confiteria\ADO NET Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Importaciones Azucares y Confiteria\Excel Source">
     <Properties>
@@ -7483,14 +7586,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Importaciones Azucares y Confiteria\ADO NET Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Importaciones Azucares y Confiteria\ADO NET Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
