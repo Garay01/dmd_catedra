@@ -5,6 +5,9 @@ use db_imports_sugar_confectionary
 GO;
 
 
+
+
+
 -- Creacion de dimensiones (Se puede crear desde acá o en el componente de SSIS)
 create table DimCountry (
 id uniqueidentifier primary key,
@@ -24,6 +27,7 @@ id_tariff_cod uniqueidentifier foreign key references DimTariff(id),
 "year" int,
 "value" float
 )
+
 
 -- Para reingresar los datos
 delete from DimCountry;
