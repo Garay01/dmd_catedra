@@ -15,25 +15,19 @@ id uniqueidentifier primary key,
 code varchar(10),
 "description" nvarchar(255)
 )
+create table DimTime (
+id uniqueidentifier primary key,
+"year" int
+)
 
 -- Creacion de tabla de hechos (Se puede crear desde acá o en el componente de SSIS)
 create table Fact_imports (
 id uniqueidentifier primary key,
 id_country uniqueidentifier foreign key references DimCountry(id),
 id_tariff_cod uniqueidentifier foreign key references DimTariff(id),
-"year" int,
+id_year uniqueidentifier foreign key references DimTime(id)
 "value" float
 )
-
--- Para reingresar los datos
-delete from DimCountry;
-delete from DimTariff;
-delete from Fact_imports;
-
--- Por equivocaciones realizadas con anterioridad
-drop table DimCountry;
-drop table DimTariff;
-drop table Fact_imports;
 
 -- Consultas
 --Calcular el total de un codigo alancerario de todos los paises con el paso de los años (1994-2016)
@@ -67,3 +61,14 @@ select dc.name, concat('Categoria ', substring(dt.code, 4, 1)) as Categoria, sum
 join DimTariff dt on fi.id_tariff_cod = dt.id
 join DimCountry dc on fi.id_country = dc.id
 group by concat('Categoria ', substring(dt.code, 4, 1)), dc.name order by dc.name, Categoria
+
+
+-- Para reingresar los datos
+delete from DimCountry;
+delete from DimTariff;
+delete from Fact_imports;
+
+-- Por equivocaciones realizadas con anterioridad
+drop table DimCountry;
+drop table DimTariff;
+drop table Fact_imports;
