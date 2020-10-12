@@ -333,7 +333,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>ReportCountriesParticipation</Value>
+                <Value>Reporte de participación de países</Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
                   <FontSize>18pt</FontSize>
