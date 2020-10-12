@@ -1,0 +1,75 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ImportsDataCube</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>YpvfGHwBp1/J5cuVGDFu5X7kKN4=11/10/2020 00:01:3910/10/2020 23:49:13</TimeStamp>
+        <ID>
+          <String>Db Imports Sugar Confectionary</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Wf0VHcikLLWoS6fbZ9Sh9Q38xdE=11/10/2020 09:46:1010/10/2020 23:49:48</TimeStamp>
+        <ID>
+          <String>Db Imports Sugar Confectionary</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hNmlNizgmk/y2t7uF4iwXuYZ3xU=11/10/2020 01:14:1810/10/2020 23:51:00</TimeStamp>
+        <ID>
+          <String>Dim Country</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zkBOFJPLGIw0PqE0VmJj1XSntnQ=11/10/2020 10:55:1410/10/2020 23:51:01</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TWP6Ldqx5ac/9zBjp/tEiVIUqaQ=12/10/2020 02:38:1110/10/2020 23:51:01</TimeStamp>
+        <ID>
+          <String>Dim Tariff</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>9+RA1s5k3IwQAC5WK0jHWDz4H5k=12/10/2020 06:48:5910/10/2020 23:51:00+3xgbao1BjgPvA2CYIACWuZ9JN4=10/10/2020 23:51:0110/10/2020 23:51:00</TimeStamp>
+        <ID>
+          <String>Db Imports Sugar Confectionary</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>y7qgLKXm/1oCKLjOMBw8S767m2k=10/10/2020 23:47:3910/10/2020 23:47:39</TimeStamp>
+      <ID>
+        <String>ImportsDataCube</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-10-12T12:49:06.59Z</LastDeployed>
+</DeploymentSnapshot>

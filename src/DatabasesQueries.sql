@@ -63,10 +63,18 @@ join DimCountry dc on fi.id_country = dc.id
 group by concat('Categoria ', substring(dt.code, 4, 1)), dc.name order by dc.name, Categoria
 
 
+select dc.name, AVG(value) from Fact_imports fi join DimCountry dc on fi.id_country = dc.id group by dc.name;
+select name, sum(value)   from Fact_imports fi join DimCountry dc on fi.id_country = dc.id join DimTariff dt on fi.id_tariff_cod = dt.id group by dc.name order by dc.name
+select code, sum(value)   from Fact_imports fi join DimCountry dc on fi.id_country = dc.id join DimTariff dt on fi.id_tariff_cod = dt.id group by dt.code order by dt.code
+select sum(value) from Fact_imports
+select name,  code, sum(value)   from Fact_imports fi join DimCountry dc on fi.id_country = dc.id join DimTariff dt on fi.id_tariff_cod = dt.id group by dc.name, dt.code order by dc.name, dt.code
+select name,  code, year, value   from Fact_imports fi join DimCountry dc on fi.id_country = dc.id join DimTariff dt on fi.id_tariff_cod = dt.id join DimTime dy on fi.id_year = dy.id order by name, code, year
+select count(*) from DimTime
 -- Para reingresar los datos
-delete from DimCountry;
-delete from DimTariff;
 delete from Fact_imports;
+delete from DimCountry;
+delete from DimTime;
+delete from DimTariff;
 
 -- Por equivocaciones realizadas con anterioridad
 drop table DimCountry;

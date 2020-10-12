@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Imports_DataSource">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=localhost;Initial Catalog=db_imports_sugar_confectionary</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>6e213273-e532-457e-94ee-a76514916922</DataSourceID>
+</RptDataSource>
